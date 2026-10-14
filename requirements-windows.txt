@@ -3,6 +3,22 @@
 -c requirements-linux.lock
 PyQt5==5.15.11
 PyQt5-Qt5==5.15.2
-cryptography==46.0.3
+cryptography==46.0.7
 pyinstaller==6.22.3
 pyinstaller-hooks-contrib==2026.8
+
+# Native Windows dependencies, recorded from the validated build environment.
+PyQt5-sip==12.20.0
+cffi==2.1.1
+pycparser==3.11
+colorama==0.4.6
+typing-extensions==4.16.0
+winrt-runtime==3.2.1
+winrt-Windows.Devices.Bluetooth==3.2.1
+winrt-Windows.Devices.Bluetooth.Advertisement==3.2.1
+winrt-Windows.Devices.Bluetooth.GenericAttributeProfile==3.2.1
+winrt-Windows.Devices.Enumeration==3.2.1
+winrt-Windows.Devices.Radios==3.2.1
+winrt-Windows.Foundation==3.2.1
+winrt-Windows.Foundation.Collections==3.2.1
+winrt-Windows.Storage.Streams==3.2.1

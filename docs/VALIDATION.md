@@ -37,7 +37,7 @@ The target is a 1 GB ARMv7 tablet running standard Ubuntu 22.04 with a 1024×600
 LXQt/Openbox desktop and software rendering. Previous package checks passed
 TCP, pseudo-terminal serial and in-process BLE simulations, embedded keyboard
 input, all-page geometry, package integrity and Exit tapping. The 0.3.0 release
-candidate repeats the installed-package checks on this tablet.
+candidate also passed these installed-package checks on this tablet.
 
 Prior measured tablet samples were approximately **80 MiB peak idle RSS** with
 the keyboard module, and **94 MiB** with 500 nodes and 5,000 stored messages.

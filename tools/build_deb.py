@@ -155,6 +155,7 @@ def build(wheelhouse, output, revision):
         target = stage / destination
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(ROOT / source, target)
+    shutil.copytree(ROOT / 'packaging/licenses', stage / 'usr/share/meshdesk/licenses')
     (stage / 'usr/share/meshdesk/dependencies.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     control = stage / 'DEBIAN'
     control.mkdir()
