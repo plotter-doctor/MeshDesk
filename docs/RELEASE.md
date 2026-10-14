@@ -32,7 +32,8 @@ Ubuntu installed-package checks and Windows executable smoke tests.
 
 The ARMv7 Ubuntu 22.04 tablet is tested directly. Ubuntu x86-64 checks cover
 22.04, 24.04, 25.04 and 25.10. Both 25.x releases are end of life; use an LTS
-release for ongoing Ubuntu security support.
+release for ongoing Ubuntu security support. Ubuntu 25.04 does not supply Qt's
+embedded keyboard packages; use the desktop's on-screen keyboard there.
 
 Windows targets 10/11 x86-64, with automated tests on Windows Server 2025.
 The ZIP is unsigned. Its official PyQt5 Windows runtime uses Qt 5.15.2.

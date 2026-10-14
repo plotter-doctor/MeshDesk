@@ -55,7 +55,8 @@ locally and excluded from the public repository.
 One architecture-independent Debian package bundles pinned pure-Python SDK
 libraries; each distribution supplies native Qt and cryptography. CI installs it
 in clean Ubuntu 22.04, 24.04, 25.04 and 25.10 x86-64 containers, tests three
-simulator transports, taps the embedded keyboard and checks a decorated window
+simulator transports, taps the embedded keyboard where supplied (all except
+Ubuntu 25.04) and checks a decorated window
 under Openbox. Actual ARM validation is performed on the tablet.
 
 Windows CI runs portable Python tests, then separately builds a self-contained

@@ -28,18 +28,16 @@ jobs:
         run: python -m pip install -c requirements-linux.lock -e '.[desktop,test]' wheel
       - if: runner.os != 'Linux'
         run: python -m pip install -e '.[desktop,test]' wheel
+      - name: Enlarge Windows runner desktop for the portrait GUI audit
+        if: runner.os == 'Windows'
+        run: Set-DisplayResolution -Width 1920 -Height 1200 -Force
       - run: python tools/audit_compatibility.py
       - if: runner.os == 'Linux'
         run: xvfb-run -a python -m pytest -v -s --cov --cov-report=xml:artifacts/coverage.xml --cov-report=json:artifacts/coverage.json --cov-report=html --junitxml=artifacts/results.xml
       - if: runner.os == 'Linux'
         run: python tools/check_coverage.py artifacts/coverage.json
       - if: runner.os != 'Linux'
-        run: python -m pytest -v -s --ignore=tests/test_gui.py --ignore=tests/test_gui_layout.py --junitxml=artifacts/results.xml
-      - name: Render portrait and landscape GUI audit independently of runner display size
-        if: runner.os == 'Windows'
-        env:
-          QT_QPA_PLATFORM: offscreen
-        run: python -m pytest -v -s tests/test_gui.py tests/test_gui_layout.py --junitxml=artifacts/geometry-results.xml
+        run: python -m pytest -v -s --junitxml=artifacts/results.xml
       - run: python -m pip wheel --no-deps . -w dist
       - uses: actions/upload-artifact@v4
         if: always()

@@ -77,7 +77,10 @@ jobs:
           useradd --create-home --shell /bin/bash meshdesk-test
           mkdir -p artifacts/package
           chown meshdesk-test:meshdesk-test artifacts/package
-          runuser -u meshdesk-test -- xvfb-run -a /usr/bin/python3 tools/smoke_deb.py --output artifacts/package
+          set --
+          . /etc/os-release
+          if [ "$VERSION_ID" = 25.04 ]; then set -- --allow-missing-keyboard; fi
+          runuser -u meshdesk-test -- xvfb-run -a /usr/bin/python3 tools/smoke_deb.py --output artifacts/package "$@"
           runuser -u meshdesk-test -- xvfb-run -a -s '-screen 0 1024x600x24' /usr/bin/python3 tools/check_window_fit.py --start-wm --output artifacts/package/window-fit
       - uses: actions/upload-artifact@v4
         if: always()

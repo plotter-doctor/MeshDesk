@@ -6,8 +6,8 @@ Architecture: all
 Maintainer: MeshDesk contributors <plotter-doctor@users.noreply.github.com>
 Homepage: https://github.com/plotter-doctor/MeshDesk
 Installed-Size: @SIZE@
-Depends: python3 (>= 3.10), python3 (<< 3.15), python3-pyqt5 (>= 5.15), python3-pyqt5.qtquick, python3-cryptography, qml-module-qtquick2, qml-module-qtquick-window2, qml-module-qtquick-layouts, qml-module-qtquick-controls2, qml-module-qtquick-templates2, qml-module-qtgraphicaleffects, qml-module-qtquick-virtualkeyboard, qml-module-qt-labs-folderlistmodel, qtvirtualkeyboard-plugin, fonts-noto-color-emoji
-Recommends: bluez, python3-pyqt5.qtpositioning
+Depends: python3 (>= 3.10), python3 (<< 3.15), python3-pyqt5 (>= 5.15), python3-pyqt5.qtquick, python3-cryptography, qml-module-qtquick2, qml-module-qtquick-window2, qml-module-qtquick-layouts, qml-module-qtquick-controls2, qml-module-qtquick-templates2, qml-module-qtgraphicaleffects, qml-module-qt-labs-folderlistmodel, fonts-noto-color-emoji
+Recommends: bluez, python3-pyqt5.qtpositioning, qml-module-qtquick-virtualkeyboard, qtvirtualkeyboard-plugin
 Suggests: fonts-noto-cjk
 Description: Native Meshtastic desktop and tablet client
  Chat, nodes, maps and radio settings using Qt Quick and the official

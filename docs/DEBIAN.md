@@ -9,7 +9,10 @@ sudo apt install ./meshdesk_0.3.0-1_all.deb
 `apt` installs required Ubuntu packages. If they are already installed, an offline
 `sudo dpkg -i meshdesk_0.3.0-1_all.deb` also works. Launch **MeshDesk** from the
 application menu or run `meshdesk`. The ARM tablet automatically enables its
-embedded keyboard. The package uses software rendering by default.
+embedded keyboard. The package uses software rendering by default. Qt Virtual Keyboard is a
+recommended dependency: Ubuntu 25.04 does not supply it, so use that desktop's
+on-screen keyboard if touch input is needed. The ARM 22.04 tablet has the embedded
+keyboard installed and tested.
 
 The `all` architecture is intentional: the package contains Python/QML/resources
 only. Ubuntu supplies architecture-specific Python, Qt and cryptography. The same

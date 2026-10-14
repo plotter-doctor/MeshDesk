@@ -118,6 +118,8 @@ def keyboard_probe(output):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=Path('artifacts/package'))
+    parser.add_argument('--allow-missing-keyboard', action='store_true',
+                        help='Allow distributions without Qt Virtual Keyboard; other checks remain mandatory')
     parser.add_argument('--keyboard-probe', action='store_true', help=argparse.SUPPRESS)
     args = parser.parse_args()
     output = args.output.resolve()
@@ -159,12 +161,18 @@ print(json.dumps({'python':sys.version.split()[0],'qt':QtCore.QT_VERSION_STR,'li
             assert screenshot.stat().st_size > 10000
             assert not any(word in result.stderr for word in ('Error:', 'Binding loop', 'Cannot load', 'is not defined')), result.stderr
             report['transports'][transport] = json.loads(ready.read_text(encoding='utf-8'))
-    keyboard_env = dict(env, QT_IM_MODULE='qtvirtualkeyboard', QT_VIRTUALKEYBOARD_DESKTOP_DISABLE='1')
-    result = subprocess.run(['/usr/bin/python3', '-I', str(Path(__file__).resolve()), '--keyboard-probe',
-        '--output', str(output)], env=keyboard_env, capture_output=True, text=True, timeout=60)
-    (output / 'keyboard.log').write_text(result.stdout + result.stderr, encoding='utf-8')
-    assert result.returncode == 0, result.stdout + result.stderr
-    report['keyboard'] = True
+    available = subprocess.check_output(['/usr/bin/python3', '-I', '-c',
+        "from pathlib import Path; from PyQt5.QtCore import QLibraryInfo; "
+        "print((Path(QLibraryInfo.location(QLibraryInfo.Qml2ImportsPath))/'QtQuick/VirtualKeyboard/qmldir').is_file())"], text=True).strip() == 'True'
+    if args.allow_missing_keyboard and not available:
+        report['keyboard_unavailable'] = 'Distribution does not provide Qt Virtual Keyboard; use the desktop keyboard'
+    else:
+        keyboard_env = dict(env, QT_IM_MODULE='qtvirtualkeyboard', QT_VIRTUALKEYBOARD_DESKTOP_DISABLE='1')
+        result = subprocess.run(['/usr/bin/python3', '-I', str(Path(__file__).resolve()), '--keyboard-probe',
+            '--output', str(output)], env=keyboard_env, capture_output=True, text=True, timeout=60)
+        (output / 'keyboard.log').write_text(result.stdout + result.stderr, encoding='utf-8')
+        assert result.returncode == 0, result.stdout + result.stderr
+        report['keyboard'] = True
     report['documentation_omitted_by_dpkg'] = verify_package()
     (output / 'report.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report, indent=2))
