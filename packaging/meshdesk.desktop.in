@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=MeshDesk
+Comment=Native Meshtastic radio client
+Exec=@PROJECT_DIR@/run.sh
+Icon=network-wireless
+Terminal=false
+Categories=Network;InstantMessaging;
+StartupWMClass=MeshDesk

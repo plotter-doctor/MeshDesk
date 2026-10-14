@@ -1,0 +1,453 @@
+{
+  "config.bluetooth": {
+    "fixed_pin": {
+      "kind": "number",
+      "min": 100000.0,
+      "max": 999999.0,
+      "integer": true
+    }
+  },
+  "config.device": {
+    "button_gpio": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "buzzer_gpio": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "node_info_broadcast_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "tzdef": {
+      "kind": "string",
+      "max": 65.0
+    }
+  },
+  "config.display": {
+    "screen_on_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "auto_screen_carousel_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  },
+  "config.lora": {
+    "bandwidth": {
+      "kind": "number",
+      "integer": true
+    },
+    "spread_factor": {
+      "kind": "number",
+      "max": 12.0,
+      "integer": true
+    },
+    "coding_rate": {
+      "kind": "number",
+      "min": 0.0,
+      "max": 10.0,
+      "integer": true
+    },
+    "frequency_offset": {
+      "kind": "number",
+      "integer": true
+    },
+    "hop_limit": {
+      "kind": "number",
+      "min": 0.0,
+      "max": 7.0,
+      "integer": true
+    },
+    "tx_power": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "channel_num": {
+      "kind": "number",
+      "integer": true
+    }
+  },
+  "config.network": {
+    "wifi_ssid": {
+      "kind": "string",
+      "max": 33.0
+    },
+    "wifi_psk": {
+      "kind": "string",
+      "max": 64.0
+    },
+    "ntp_server": {
+      "kind": "string",
+      "min": 0.0,
+      "max": 33.0
+    },
+    "rsyslog_server": {
+      "kind": "string",
+      "max": 33.0
+    }
+  },
+  "config.position": {
+    "position_broadcast_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "gps_update_interval": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "position_flags": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "rx_gpio": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "tx_gpio": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "broadcast_smart_minimum_distance": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "broadcast_smart_minimum_interval_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "gps_en_gpio": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  },
+  "config.power": {
+    "on_battery_shutdown_after_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "adc_multiplier_override": {
+      "kind": "number",
+      "min": 0.0,
+      "max": 4.0
+    },
+    "wait_bluetooth_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "sds_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "ls_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "min_wake_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "device_battery_ina_address": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  },
+  "module.ambient_lighting": {
+    "current": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "red": {
+      "kind": "number",
+      "min": 0.0,
+      "max": 255.0,
+      "integer": true
+    },
+    "green": {
+      "kind": "number",
+      "min": 0.0,
+      "max": 255.0,
+      "integer": true
+    },
+    "blue": {
+      "kind": "number",
+      "min": 0.0,
+      "max": 255.0,
+      "integer": true
+    }
+  },
+  "module.audio": {
+    "ptt_pin": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "i2s_ws": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "i2s_sd": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "i2s_din": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "i2s_sck": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  },
+  "module.canned_message": {
+    "inputbroker_pin_a": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "inputbroker_pin_b": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "inputbroker_pin_press": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "allow_input_source": {
+      "kind": "string",
+      "max": 30.0
+    }
+  },
+  "module.detection_sensor": {
+    "minimum_broadcast_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "state_broadcast_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "name": {
+      "kind": "string",
+      "min": 0.0,
+      "max": 20.0
+    },
+    "monitor_pin": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  },
+  "module.external_notification": {
+    "output_ms": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "output": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "output_vibra": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "output_buzzer": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "nag_timeout": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  },
+  "module.mqtt": {
+    "map_report_settings.publish_interval_secs": {
+      "kind": "number",
+      "integer": true
+    },
+    "map_report_settings.position_precision": {
+      "kind": "number",
+      "integer": true
+    },
+    "address": {
+      "kind": "string",
+      "min": 0.0,
+      "max": 63.0
+    },
+    "username": {
+      "kind": "string",
+      "min": 0.0,
+      "max": 63.0
+    },
+    "password": {
+      "kind": "string",
+      "min": 0.0,
+      "max": 63.0
+    },
+    "root": {
+      "kind": "string",
+      "max": 31.0
+    }
+  },
+  "module.neighbor_info": {
+    "update_interval": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  },
+  "module.paxcounter": {
+    "paxcounter_update_interval": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "ble_threshold": {
+      "kind": "number",
+      "integer": true
+    },
+    "wifi_threshold": {
+      "kind": "number",
+      "integer": true
+    }
+  },
+  "module.range_test": {
+    "sender": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  },
+  "module.serial": {
+    "rxd": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "txd": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "timeout": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  },
+  "module.statusmessage": {
+    "node_status": {
+      "kind": "string",
+      "max": 200.0
+    }
+  },
+  "module.store_forward": {
+    "records": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "history_return_max": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "history_return_window": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  },
+  "module.telemetry": {
+    "device_update_interval": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "environment_update_interval": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "air_quality_interval": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "power_update_interval": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  },
+  "module.traffic_management": {
+    "position_precision_bits": {
+      "kind": "number",
+      "min": 0.0,
+      "max": 32.0,
+      "integer": true
+    },
+    "position_min_interval_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "nodeinfo_direct_response_max_hops": {
+      "kind": "number",
+      "min": 0.0,
+      "max": 7.0,
+      "integer": true
+    },
+    "rate_limit_window_secs": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "rate_limit_max_packets": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    },
+    "unknown_packet_threshold": {
+      "kind": "number",
+      "min": 0.0,
+      "integer": true
+    }
+  }
+}

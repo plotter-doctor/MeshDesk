@@ -1,0 +1,1262 @@
+[
+  {
+    "source": "apps/web/src/components/PageComponents/Channels/Channel.tsx",
+    "web_field": "role",
+    "section": "channel.0",
+    "native": "role"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Channels/Channel.tsx",
+    "web_field": "settings.psk",
+    "section": "channel.0",
+    "native": "settings.psk"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Channels/Channel.tsx",
+    "web_field": "settings.name",
+    "section": "channel.0",
+    "native": "settings.name"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Channels/Channel.tsx",
+    "web_field": "settings.uplinkEnabled",
+    "section": "channel.0",
+    "native": "settings.uplink_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Channels/Channel.tsx",
+    "web_field": "settings.downlinkEnabled",
+    "section": "channel.0",
+    "native": "settings.downlink_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Channels/Channel.tsx",
+    "web_field": "settings.moduleSettings.positionPrecision",
+    "section": "channel.0",
+    "native": "settings.module_settings.position_precision"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/AmbientLighting.tsx",
+    "web_field": "ledState",
+    "section": "module.ambient_lighting",
+    "native": "led_state"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/AmbientLighting.tsx",
+    "web_field": "current",
+    "section": "module.ambient_lighting",
+    "native": "current"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/AmbientLighting.tsx",
+    "web_field": "red",
+    "section": "module.ambient_lighting",
+    "native": "red"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/AmbientLighting.tsx",
+    "web_field": "green",
+    "section": "module.ambient_lighting",
+    "native": "green"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/AmbientLighting.tsx",
+    "web_field": "blue",
+    "section": "module.ambient_lighting",
+    "native": "blue"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Audio.tsx",
+    "web_field": "codec2Enabled",
+    "section": "module.audio",
+    "native": "codec2_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Audio.tsx",
+    "web_field": "pttPin",
+    "section": "module.audio",
+    "native": "ptt_pin"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Audio.tsx",
+    "web_field": "bitrate",
+    "section": "module.audio",
+    "native": "bitrate"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Audio.tsx",
+    "web_field": "i2sWs",
+    "section": "module.audio",
+    "native": "i2s_ws"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Audio.tsx",
+    "web_field": "i2sSd",
+    "section": "module.audio",
+    "native": "i2s_sd"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Audio.tsx",
+    "web_field": "i2sDin",
+    "section": "module.audio",
+    "native": "i2s_din"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Audio.tsx",
+    "web_field": "i2sSck",
+    "section": "module.audio",
+    "native": "i2s_sck"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/CannedMessage.tsx",
+    "web_field": "enabled",
+    "section": "module.canned_message",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/CannedMessage.tsx",
+    "web_field": "rotary1Enabled",
+    "section": "module.canned_message",
+    "native": "rotary1_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/CannedMessage.tsx",
+    "web_field": "inputbrokerPinA",
+    "section": "module.canned_message",
+    "native": "inputbroker_pin_a"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/CannedMessage.tsx",
+    "web_field": "inputbrokerPinB",
+    "section": "module.canned_message",
+    "native": "inputbroker_pin_b"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/CannedMessage.tsx",
+    "web_field": "inputbrokerPinPress",
+    "section": "module.canned_message",
+    "native": "inputbroker_pin_press"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/CannedMessage.tsx",
+    "web_field": "inputbrokerEventPress",
+    "section": "module.canned_message",
+    "native": "inputbroker_event_press"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/CannedMessage.tsx",
+    "web_field": "inputbrokerEventCw",
+    "section": "module.canned_message",
+    "native": "inputbroker_event_cw"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/CannedMessage.tsx",
+    "web_field": "inputbrokerEventCcw",
+    "section": "module.canned_message",
+    "native": "inputbroker_event_ccw"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/CannedMessage.tsx",
+    "web_field": "updown1Enabled",
+    "section": "module.canned_message",
+    "native": "updown1_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/CannedMessage.tsx",
+    "web_field": "allowInputSource",
+    "section": "module.canned_message",
+    "native": "allow_input_source"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/CannedMessage.tsx",
+    "web_field": "sendBell",
+    "section": "module.canned_message",
+    "native": "send_bell"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/DetectionSensor.tsx",
+    "web_field": "enabled",
+    "section": "module.detection_sensor",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/DetectionSensor.tsx",
+    "web_field": "minimumBroadcastSecs",
+    "section": "module.detection_sensor",
+    "native": "minimum_broadcast_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/DetectionSensor.tsx",
+    "web_field": "stateBroadcastSecs",
+    "section": "module.detection_sensor",
+    "native": "state_broadcast_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/DetectionSensor.tsx",
+    "web_field": "sendBell",
+    "section": "module.detection_sensor",
+    "native": "send_bell"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/DetectionSensor.tsx",
+    "web_field": "name",
+    "section": "module.detection_sensor",
+    "native": "name"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/DetectionSensor.tsx",
+    "web_field": "monitorPin",
+    "section": "module.detection_sensor",
+    "native": "monitor_pin"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/DetectionSensor.tsx",
+    "web_field": "detectionTriggerType",
+    "section": "module.detection_sensor",
+    "native": "detection_trigger_type"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/DetectionSensor.tsx",
+    "web_field": "usePullup",
+    "section": "module.detection_sensor",
+    "native": "use_pullup"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "enabled",
+    "section": "module.external_notification",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "alertMessage",
+    "section": "module.external_notification",
+    "native": "alert_message"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "alertMessageBuzzer",
+    "section": "module.external_notification",
+    "native": "alert_message_buzzer"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "alertMessageVibra",
+    "section": "module.external_notification",
+    "native": "alert_message_vibra"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "alertBell",
+    "section": "module.external_notification",
+    "native": "alert_bell"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "alertBellBuzzer",
+    "section": "module.external_notification",
+    "native": "alert_bell_buzzer"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "alertBellVibra",
+    "section": "module.external_notification",
+    "native": "alert_bell_vibra"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "output",
+    "section": "module.external_notification",
+    "native": "output"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "active",
+    "section": "module.external_notification",
+    "native": "active"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "outputBuzzer",
+    "section": "module.external_notification",
+    "native": "output_buzzer"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "usePwm",
+    "section": "module.external_notification",
+    "native": "use_pwm"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "outputVibra",
+    "section": "module.external_notification",
+    "native": "output_vibra"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "outputMs",
+    "section": "module.external_notification",
+    "native": "output_ms"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "nagTimeout",
+    "section": "module.external_notification",
+    "native": "nag_timeout"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/ExternalNotification.tsx",
+    "web_field": "useI2sAsBuzzer",
+    "section": "module.external_notification",
+    "native": "use_i2s_as_buzzer"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "enabled",
+    "section": "module.mqtt",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "address",
+    "section": "module.mqtt",
+    "native": "address"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "username",
+    "section": "module.mqtt",
+    "native": "username"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "password",
+    "section": "module.mqtt",
+    "native": "password"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "encryptionEnabled",
+    "section": "module.mqtt",
+    "native": "encryption_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "jsonEnabled",
+    "section": "module.mqtt",
+    "native": "json_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "tlsEnabled",
+    "section": "module.mqtt",
+    "native": "tls_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "root",
+    "section": "module.mqtt",
+    "native": "root"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "proxyToClientEnabled",
+    "section": "module.mqtt",
+    "native": "proxy_to_client_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "mapReportingEnabled",
+    "section": "module.mqtt",
+    "native": "map_reporting_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "mapReportSettings.shouldReportLocation",
+    "section": "module.mqtt",
+    "native": "map_report_settings.should_report_location"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "mapReportSettings.positionPrecision",
+    "section": "module.mqtt",
+    "native": "map_report_settings.position_precision"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/MQTT.tsx",
+    "web_field": "mapReportSettings.publishIntervalSecs",
+    "section": "module.mqtt",
+    "native": "map_report_settings.publish_interval_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/NeighborInfo.tsx",
+    "web_field": "enabled",
+    "section": "module.neighbor_info",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/NeighborInfo.tsx",
+    "web_field": "updateInterval",
+    "section": "module.neighbor_info",
+    "native": "update_interval"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/NeighborInfo.tsx",
+    "web_field": "transmitOverLora",
+    "section": "module.neighbor_info",
+    "native": "transmit_over_lora"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Paxcounter.tsx",
+    "web_field": "enabled",
+    "section": "module.paxcounter",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Paxcounter.tsx",
+    "web_field": "paxcounterUpdateInterval",
+    "section": "module.paxcounter",
+    "native": "paxcounter_update_interval"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Paxcounter.tsx",
+    "web_field": "wifiThreshold",
+    "section": "module.paxcounter",
+    "native": "wifi_threshold"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Paxcounter.tsx",
+    "web_field": "bleThreshold",
+    "section": "module.paxcounter",
+    "native": "ble_threshold"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/RangeTest.tsx",
+    "web_field": "enabled",
+    "section": "module.range_test",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/RangeTest.tsx",
+    "web_field": "sender",
+    "section": "module.range_test",
+    "native": "sender"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/RangeTest.tsx",
+    "web_field": "save",
+    "section": "module.range_test",
+    "native": "save"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/RemoteHardware.tsx",
+    "web_field": "enabled",
+    "section": "module.remote_hardware",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/RemoteHardware.tsx",
+    "web_field": "allowUndefinedPinAccess",
+    "section": "module.remote_hardware",
+    "native": "allow_undefined_pin_access"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Serial.tsx",
+    "web_field": "enabled",
+    "section": "module.serial",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Serial.tsx",
+    "web_field": "echo",
+    "section": "module.serial",
+    "native": "echo"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Serial.tsx",
+    "web_field": "rxd",
+    "section": "module.serial",
+    "native": "rxd"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Serial.tsx",
+    "web_field": "txd",
+    "section": "module.serial",
+    "native": "txd"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Serial.tsx",
+    "web_field": "baud",
+    "section": "module.serial",
+    "native": "baud"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Serial.tsx",
+    "web_field": "timeout",
+    "section": "module.serial",
+    "native": "timeout"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Serial.tsx",
+    "web_field": "mode",
+    "section": "module.serial",
+    "native": "mode"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Serial.tsx",
+    "web_field": "overrideConsoleSerialPort",
+    "section": "module.serial",
+    "native": "override_console_serial_port"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/StatusMessage.tsx",
+    "web_field": "nodeStatus",
+    "section": "module.statusmessage",
+    "native": "node_status"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/StoreForward.tsx",
+    "web_field": "enabled",
+    "section": "module.store_forward",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/StoreForward.tsx",
+    "web_field": "heartbeat",
+    "section": "module.store_forward",
+    "native": "heartbeat"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/StoreForward.tsx",
+    "web_field": "records",
+    "section": "module.store_forward",
+    "native": "records"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/StoreForward.tsx",
+    "web_field": "historyReturnMax",
+    "section": "module.store_forward",
+    "native": "history_return_max"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/StoreForward.tsx",
+    "web_field": "historyReturnWindow",
+    "section": "module.store_forward",
+    "native": "history_return_window"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/StoreForward.tsx",
+    "web_field": "isServer",
+    "section": "module.store_forward",
+    "native": "is_server"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Tak.tsx",
+    "web_field": "team",
+    "section": "module.tak",
+    "native": "team"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Tak.tsx",
+    "web_field": "role",
+    "section": "module.tak",
+    "native": "role"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "deviceTelemetryEnabled",
+    "section": "module.telemetry",
+    "native": "device_telemetry_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "deviceUpdateInterval",
+    "section": "module.telemetry",
+    "native": "device_update_interval"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "environmentMeasurementEnabled",
+    "section": "module.telemetry",
+    "native": "environment_measurement_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "environmentUpdateInterval",
+    "section": "module.telemetry",
+    "native": "environment_update_interval"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "environmentScreenEnabled",
+    "section": "module.telemetry",
+    "native": "environment_screen_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "environmentDisplayFahrenheit",
+    "section": "module.telemetry",
+    "native": "environment_display_fahrenheit"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "airQualityEnabled",
+    "section": "module.telemetry",
+    "native": "air_quality_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "airQualityInterval",
+    "section": "module.telemetry",
+    "native": "air_quality_interval"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "airQualityScreenEnabled",
+    "section": "module.telemetry",
+    "native": "air_quality_screen_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "powerMeasurementEnabled",
+    "section": "module.telemetry",
+    "native": "power_measurement_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "powerUpdateInterval",
+    "section": "module.telemetry",
+    "native": "power_update_interval"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/Telemetry.tsx",
+    "web_field": "powerScreenEnabled",
+    "section": "module.telemetry",
+    "native": "power_screen_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "enabled",
+    "section": "module.traffic_management",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "positionDedupEnabled",
+    "section": "module.traffic_management",
+    "native": "position_dedup_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "positionPrecisionBits",
+    "section": "module.traffic_management",
+    "native": "position_precision_bits"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "positionMinIntervalSecs",
+    "section": "module.traffic_management",
+    "native": "position_min_interval_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "nodeinfoDirectResponse",
+    "section": "module.traffic_management",
+    "native": "nodeinfo_direct_response"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "nodeinfoDirectResponseMaxHops",
+    "section": "module.traffic_management",
+    "native": "nodeinfo_direct_response_max_hops"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "rateLimitEnabled",
+    "section": "module.traffic_management",
+    "native": "rate_limit_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "rateLimitWindowSecs",
+    "section": "module.traffic_management",
+    "native": "rate_limit_window_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "rateLimitMaxPackets",
+    "section": "module.traffic_management",
+    "native": "rate_limit_max_packets"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "dropUnknownEnabled",
+    "section": "module.traffic_management",
+    "native": "drop_unknown_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "unknownPacketThreshold",
+    "section": "module.traffic_management",
+    "native": "unknown_packet_threshold"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "exhaustHopTelemetry",
+    "section": "module.traffic_management",
+    "native": "exhaust_hop_telemetry"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "exhaustHopPosition",
+    "section": "module.traffic_management",
+    "native": "exhaust_hop_position"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/ModuleConfig/TrafficManagement.tsx",
+    "web_field": "routerPreserveHops",
+    "section": "module.traffic_management",
+    "native": "router_preserve_hops"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Bluetooth.tsx",
+    "web_field": "enabled",
+    "section": "config.bluetooth",
+    "native": "enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Bluetooth.tsx",
+    "web_field": "mode",
+    "section": "config.bluetooth",
+    "native": "mode"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Bluetooth.tsx",
+    "web_field": "fixedPin",
+    "section": "config.bluetooth",
+    "native": "fixed_pin"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Device/index.tsx",
+    "web_field": "role",
+    "section": "config.device",
+    "native": "role"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Device/index.tsx",
+    "web_field": "rebroadcastMode",
+    "section": "config.device",
+    "native": "rebroadcast_mode"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Device/index.tsx",
+    "web_field": "nodeInfoBroadcastSecs",
+    "section": "config.device",
+    "native": "node_info_broadcast_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Device/index.tsx",
+    "web_field": "doubleTapAsButtonPress",
+    "section": "config.device",
+    "native": "double_tap_as_button_press"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Device/index.tsx",
+    "web_field": "disableTripleClick",
+    "section": "config.device",
+    "native": "disable_triple_click"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Device/index.tsx",
+    "web_field": "ledHeartbeatDisabled",
+    "section": "config.device",
+    "native": "led_heartbeat_disabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Device/index.tsx",
+    "web_field": "tzdef",
+    "section": "config.device",
+    "native": "tzdef"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Device/index.tsx",
+    "web_field": "buttonGpio",
+    "section": "config.device",
+    "native": "button_gpio"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Device/index.tsx",
+    "web_field": "buzzerGpio",
+    "section": "config.device",
+    "native": "buzzer_gpio"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "compassNorthTop",
+    "section": "config.display",
+    "native": "compass_north_top"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "use12hClock",
+    "section": "config.display",
+    "native": "use_12h_clock"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "headingBold",
+    "section": "config.display",
+    "native": "heading_bold"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "units",
+    "section": "config.display",
+    "native": "units"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "screenOnSecs",
+    "section": "config.display",
+    "native": "screen_on_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "autoScreenCarouselSecs",
+    "section": "config.display",
+    "native": "auto_screen_carousel_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "wakeOnTapOrMotion",
+    "section": "config.display",
+    "native": "wake_on_tap_or_motion"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "flipScreen",
+    "section": "config.display",
+    "native": "flip_screen"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "displaymode",
+    "section": "config.display",
+    "native": "displaymode"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "oled",
+    "section": "config.display",
+    "native": "oled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "compassOrientation",
+    "section": "config.display",
+    "native": "compass_orientation"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Display.tsx",
+    "web_field": "enableMessageBubbles",
+    "section": "config.display",
+    "native": "enable_message_bubbles"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "region",
+    "section": "config.lora",
+    "native": "region"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "usePreset",
+    "section": "config.lora",
+    "native": "use_preset"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "modemPreset",
+    "section": "config.lora",
+    "native": "modem_preset"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "bandwidth",
+    "section": "config.lora",
+    "native": "bandwidth"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "spreadFactor",
+    "section": "config.lora",
+    "native": "spread_factor"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "codingRate",
+    "section": "config.lora",
+    "native": "coding_rate"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "ignoreMqtt",
+    "section": "config.lora",
+    "native": "ignore_mqtt"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "configOkToMqtt",
+    "section": "config.lora",
+    "native": "config_ok_to_mqtt"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "txEnabled",
+    "section": "config.lora",
+    "native": "tx_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "overrideDutyCycle",
+    "section": "config.lora",
+    "native": "override_duty_cycle"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "hopLimit",
+    "section": "config.lora",
+    "native": "hop_limit"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "channelNum",
+    "section": "config.lora",
+    "native": "channel_num"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "frequencyOffset",
+    "section": "config.lora",
+    "native": "frequency_offset"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "sx126xRxBoostedGain",
+    "section": "config.lora",
+    "native": "sx126x_rx_boosted_gain"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "overrideFrequency",
+    "section": "config.lora",
+    "native": "override_frequency"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "txPower",
+    "section": "config.lora",
+    "native": "tx_power"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "femLnaMode",
+    "section": "config.lora",
+    "native": "fem_lna_mode"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/LoRa.tsx",
+    "web_field": "serialHalOnly",
+    "section": "config.lora",
+    "native": "serial_hal_only"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "wifiEnabled",
+    "section": "config.network",
+    "native": "wifi_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "wifiSsid",
+    "section": "config.network",
+    "native": "wifi_ssid"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "wifiPsk",
+    "section": "config.network",
+    "native": "wifi_psk"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "ethEnabled",
+    "section": "config.network",
+    "native": "eth_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "ntpServer",
+    "section": "config.network",
+    "native": "ntp_server"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "rsyslogServer",
+    "section": "config.network",
+    "native": "rsyslog_server"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "enabledProtocols",
+    "section": "config.network",
+    "native": "enabled_protocols"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "addressMode",
+    "section": "config.network",
+    "native": "address_mode"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "ipv4Config.ip",
+    "section": "config.network",
+    "native": "ipv4_config.ip"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "ipv4Config.gateway",
+    "section": "config.network",
+    "native": "ipv4_config.gateway"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "ipv4Config.subnet",
+    "section": "config.network",
+    "native": "ipv4_config.subnet"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Network/index.tsx",
+    "web_field": "ipv4Config.dns",
+    "section": "config.network",
+    "native": "ipv4_config.dns"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "positionBroadcastSecs",
+    "section": "config.position",
+    "native": "position_broadcast_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "positionBroadcastSmartEnabled",
+    "section": "config.position",
+    "native": "position_broadcast_smart_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "broadcastSmartMinimumIntervalSecs",
+    "section": "config.position",
+    "native": "broadcast_smart_minimum_interval_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "broadcastSmartMinimumDistance",
+    "section": "config.position",
+    "native": "broadcast_smart_minimum_distance"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "fixedPosition",
+    "section": "config.position",
+    "native": "fixed_position"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "latitude",
+    "section": "config.position",
+    "native": "command:fixed_position"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "longitude",
+    "section": "config.position",
+    "native": "command:fixed_position"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "altitude",
+    "section": "config.position",
+    "native": "command:fixed_position"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "gpsMode",
+    "section": "config.position",
+    "native": "gps_mode"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "gpsUpdateInterval",
+    "section": "config.position",
+    "native": "gps_update_interval"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "positionFlags",
+    "section": "config.position",
+    "native": "position_flags"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "rxGpio",
+    "section": "config.position",
+    "native": "rx_gpio"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "txGpio",
+    "section": "config.position",
+    "native": "tx_gpio"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Position.tsx",
+    "web_field": "gpsEnGpio",
+    "section": "config.position",
+    "native": "gps_en_gpio"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Power.tsx",
+    "web_field": "isPowerSaving",
+    "section": "config.power",
+    "native": "is_power_saving"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Power.tsx",
+    "web_field": "onBatteryShutdownAfterSecs",
+    "section": "config.power",
+    "native": "on_battery_shutdown_after_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Power.tsx",
+    "web_field": "adcMultiplierOverride",
+    "section": "config.power",
+    "native": "adc_multiplier_override"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Power.tsx",
+    "web_field": "waitBluetoothSecs",
+    "section": "config.power",
+    "native": "wait_bluetooth_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Power.tsx",
+    "web_field": "sdsSecs",
+    "section": "config.power",
+    "native": "sds_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Power.tsx",
+    "web_field": "minWakeSecs",
+    "section": "config.power",
+    "native": "min_wake_secs"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Power.tsx",
+    "web_field": "deviceBatteryInaAddress",
+    "section": "config.power",
+    "native": "device_battery_ina_address"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Security/Security.tsx",
+    "web_field": "privateKey",
+    "section": "config.security",
+    "native": "private_key"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Security/Security.tsx",
+    "web_field": "publicKey",
+    "section": "config.security",
+    "native": "public_key"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Security/Security.tsx",
+    "web_field": "adminKey.0",
+    "section": "config.security",
+    "native": "admin_key"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Security/Security.tsx",
+    "web_field": "adminKey.1",
+    "section": "config.security",
+    "native": "admin_key"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Security/Security.tsx",
+    "web_field": "adminKey.2",
+    "section": "config.security",
+    "native": "admin_key"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Security/Security.tsx",
+    "web_field": "serialEnabled",
+    "section": "config.security",
+    "native": "serial_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Security/Security.tsx",
+    "web_field": "debugLogApiEnabled",
+    "section": "config.security",
+    "native": "debug_log_api_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Security/Security.tsx",
+    "web_field": "isManaged",
+    "section": "config.security",
+    "native": "is_managed"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/Security/Security.tsx",
+    "web_field": "adminChannelEnabled",
+    "section": "config.security",
+    "native": "admin_channel_enabled"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/User.tsx",
+    "web_field": "nodeId",
+    "section": "user",
+    "native": "id"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/User.tsx",
+    "web_field": "longName",
+    "section": "user",
+    "native": "long_name"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/User.tsx",
+    "web_field": "shortName",
+    "section": "user",
+    "native": "short_name"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/User.tsx",
+    "web_field": "hardwareModel",
+    "section": "user",
+    "native": "hw_model"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/User.tsx",
+    "web_field": "isUnmessageable",
+    "section": "user",
+    "native": "is_unmessagable"
+  },
+  {
+    "source": "apps/web/src/components/PageComponents/Settings/User.tsx",
+    "web_field": "isLicensed",
+    "section": "user",
+    "native": "is_licensed"
+  }
+]

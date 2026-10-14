@@ -1,0 +1,154 @@
+name: Packages and releases
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    tags: ['v*']
+permissions:
+  contents: read
+concurrency:
+  group: packages-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  checks:
+    uses: ./.github/workflows/test.yml
+  debian:
+    runs-on: ubuntu-24.04
+    container: ubuntu:22.04
+    env:
+      DEBIAN_FRONTEND: noninteractive
+    steps:
+      - name: Install build tools
+        run: |
+          apt-get update
+          apt-get install -y python3-venv python3-pip dpkg-dev git ca-certificates
+          python3 -m venv /tmp/meshdesk-build
+          /tmp/meshdesk-build/bin/pip install 'setuptools>=68' wheel packaging
+      - uses: actions/checkout@v4
+      - name: Build package
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+          REF_TYPE: ${{ github.ref_type }}
+        run: |
+          if [ "$REF_TYPE" = tag ]; then
+            /tmp/meshdesk-build/bin/python -c 'import os; from tools.build_deb import version; assert os.environ["RELEASE_TAG"] == "v" + version(), "Tag must match app version"'
+          fi
+          export SOURCE_DATE_EPOCH="$(git log -1 --format=%ct)"
+          /tmp/meshdesk-build/bin/python tools/build_deb.py
+          cp build/debian/meshdesk_*/usr/share/meshdesk/dependencies.json dist/debian-dependencies.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: debian-package
+          path: |
+            dist/*.deb
+            dist/*.deb.sha256
+            dist/debian-dependencies.json
+  ubuntu:
+    needs: debian
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        ubuntu: ['22.04', '24.04', '25.04', '25.10']
+    container: ubuntu:${{ matrix.ubuntu }}
+    env:
+      DEBIAN_FRONTEND: noninteractive
+    steps:
+      - name: Configure archived releases and install tools
+        run: |
+          . /etc/os-release
+          case "$VERSION_ID" in
+            25.*) find /etc/apt -type f \( -name sources.list -o -name '*.sources' \) -exec sed -i -E 's#https?://(archive.ubuntu.com/ubuntu/?|security.ubuntu.com/ubuntu/?)#http://old-releases.ubuntu.com/ubuntu/#g' {} + ;;
+          esac
+          apt-get update
+          apt-get install -y git ca-certificates xvfb xauth openbox x11-utils
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: debian-package
+          path: dist
+      - name: Test installed package
+        run: |
+          apt-get install -y ./dist/meshdesk_*_all.deb
+          useradd --create-home --shell /bin/bash meshdesk-test
+          mkdir -p artifacts/package
+          chown meshdesk-test:meshdesk-test artifacts/package
+          runuser -u meshdesk-test -- xvfb-run -a /usr/bin/python3 tools/smoke_deb.py --output artifacts/package
+          runuser -u meshdesk-test -- xvfb-run -a -s '-screen 0 1024x600x24' /usr/bin/python3 tools/check_window_fit.py --start-wm --output artifacts/package/window-fit
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ubuntu-${{ matrix.ubuntu }}-validation
+          path: artifacts/package/
+  windows:
+    runs-on: windows-2025
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build portable executable
+        run: |
+          python -m venv .build-venv
+          .build-venv/Scripts/python -m pip install -r requirements-windows.txt .
+          .build-venv/Scripts/python tools/build_windows.py
+          Copy-Item dist/windows/MeshDesk/dependencies.json dist/windows-dependencies.json
+      - name: Test packaged executable
+        run: python tools/smoke_windows.py dist/windows/MeshDesk/MeshDesk.exe
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: windows-package
+          path: |
+            dist/*.zip
+            dist/*.zip.sha256
+            dist/windows-dependencies.json
+            artifacts/windows/
+  sources:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [debian, windows]
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: debian-package
+          path: inputs/debian
+      - uses: actions/download-artifact@v4
+        with:
+          name: windows-package
+          path: inputs/windows
+      - run: python tools/collect_sources.py --debian inputs/debian/debian-dependencies.json --windows inputs/windows/dist/windows-dependencies.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: corresponding-source
+          compression-level: 0
+          path: dist/*
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [checks, ubuntu, windows, sources]
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: '*package'
+          path: release-artifacts
+      - uses: actions/download-artifact@v4
+        with:
+          name: corresponding-source
+          path: release-artifacts/sources
+      - name: Publish tagged release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          mkdir release-assets
+          find release-artifacts -type f \( -name '*.deb' -o -name '*.zip' -o -name '*.tar.gz' -o -name '*.tar.xz' -o -name '*.sha256' -o -name '*sources.json' -o -name '*dependencies.json' \) -exec cp {} release-assets/ \;
+          gh release create "$RELEASE_TAG" release-assets/* --verify-tag --notes-file docs/RELEASE.md --title "MeshDesk $RELEASE_TAG"

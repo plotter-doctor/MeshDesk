@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meshdesk"
+version = "0.3.0"
+description = "A native, touch-friendly Meshtastic client for Linux and desktop platforms"
+requires-python = ">=3.10,<3.15"
+license = {text = "GPL-3.0-only"}
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 (GPLv3)"]
+dependencies = ["meshtastic==2.7.11", "protobuf==7.36.2", "qrcode==8.2", "cryptography>=3.4.8,<47"]
+
+[project.optional-dependencies]
+desktop = ["PyQt5>=5.15.6,<5.16"]
+test = ["pytest>=8,<9", "pytest-cov>=7,<8"]
+
+[project.scripts]
+meshdesk = "meshdesk.app:main"
+meshdesk-simulator = "meshdesk.simulator:main"
+
+[project.urls]
+Homepage = "https://github.com/plotter-doctor/MeshDesk"
+Repository = "https://github.com/plotter-doctor/MeshDesk"
+Issues = "https://github.com/plotter-doctor/MeshDesk/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+meshdesk = ["qml/*.qml", "resources/*.json", "resources/*.svg", "resources/locales/*.json", "resources/native-locales/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["meshdesk"]
+branch = true
+patch = ["subprocess"]
+relative_files = true
+
+[tool.coverage.report]
+precision = 2
+show_missing = true
+fail_under = 95
+
+[tool.coverage.html]
+directory = "artifacts/coverage"

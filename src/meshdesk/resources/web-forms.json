@@ -1,0 +1,2301 @@
+{
+  "channel.0": [
+    {
+      "path": "role",
+      "web_name": "role",
+      "type": "select",
+      "group": "channels.settings.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "channels.role.label",
+      "description": "channels.role.description"
+    },
+    {
+      "path": "settings.psk",
+      "web_name": "settings.psk",
+      "type": "passwordGenerator",
+      "group": "channels.settings.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "channels.psk.label",
+      "description": "channels.psk.description"
+    },
+    {
+      "path": "settings.name",
+      "web_name": "settings.name",
+      "type": "text",
+      "group": "channels.settings.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "channels.name.label",
+      "description": "channels.name.description"
+    },
+    {
+      "path": "settings.uplink_enabled",
+      "web_name": "settings.uplinkEnabled",
+      "type": "toggle",
+      "group": "channels.settings.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "channels.uplinkEnabled.label",
+      "description": "channels.uplinkEnabled.description"
+    },
+    {
+      "path": "settings.downlink_enabled",
+      "web_name": "settings.downlinkEnabled",
+      "type": "toggle",
+      "group": "channels.settings.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "channels.downlinkEnabled.label",
+      "description": "channels.downlinkEnabled.description"
+    },
+    {
+      "path": "settings.module_settings.position_precision",
+      "web_name": "settings.moduleSettings.positionPrecision",
+      "type": "select",
+      "group": "channels.settings.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "channels.positionPrecision.label",
+      "description": "channels.positionPrecision.description"
+    }
+  ],
+  "module.ambient_lighting": [
+    {
+      "path": "led_state",
+      "web_name": "ledState",
+      "type": "toggle",
+      "group": "moduleConfig.ambientLighting.ambientLightingConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.ambientLighting.ledState.label",
+      "description": "moduleConfig.ambientLighting.ledState.description"
+    },
+    {
+      "path": "current",
+      "web_name": "current",
+      "type": "number",
+      "group": "moduleConfig.ambientLighting.ambientLightingConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.ambientLighting.current.label",
+      "description": "moduleConfig.ambientLighting.current.description"
+    },
+    {
+      "path": "red",
+      "web_name": "red",
+      "type": "number",
+      "group": "moduleConfig.ambientLighting.ambientLightingConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.ambientLighting.red.label",
+      "description": "moduleConfig.ambientLighting.red.description"
+    },
+    {
+      "path": "green",
+      "web_name": "green",
+      "type": "number",
+      "group": "moduleConfig.ambientLighting.ambientLightingConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.ambientLighting.green.label",
+      "description": "moduleConfig.ambientLighting.green.description"
+    },
+    {
+      "path": "blue",
+      "web_name": "blue",
+      "type": "number",
+      "group": "moduleConfig.ambientLighting.ambientLightingConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.ambientLighting.blue.label",
+      "description": "moduleConfig.ambientLighting.blue.description"
+    }
+  ],
+  "module.audio": [
+    {
+      "path": "codec2_enabled",
+      "web_name": "codec2Enabled",
+      "type": "toggle",
+      "group": "moduleConfig.audio.audioConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.audio.codec2Enabled.label",
+      "description": "moduleConfig.audio.codec2Enabled.description"
+    },
+    {
+      "path": "ptt_pin",
+      "web_name": "pttPin",
+      "type": "number",
+      "group": "moduleConfig.audio.audioConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.audio.pttPin.label",
+      "description": "moduleConfig.audio.pttPin.description"
+    },
+    {
+      "path": "bitrate",
+      "web_name": "bitrate",
+      "type": "select",
+      "group": "moduleConfig.audio.audioConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.audio.bitrate.label",
+      "description": "moduleConfig.audio.bitrate.description"
+    },
+    {
+      "path": "i2s_ws",
+      "web_name": "i2sWs",
+      "type": "number",
+      "group": "moduleConfig.audio.audioConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.audio.i2sWs.label",
+      "description": "moduleConfig.audio.i2sWs.description"
+    },
+    {
+      "path": "i2s_sd",
+      "web_name": "i2sSd",
+      "type": "number",
+      "group": "moduleConfig.audio.audioConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.audio.i2sSd.label",
+      "description": "moduleConfig.audio.i2sSd.description"
+    },
+    {
+      "path": "i2s_din",
+      "web_name": "i2sDin",
+      "type": "number",
+      "group": "moduleConfig.audio.audioConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.audio.i2sDin.label",
+      "description": "moduleConfig.audio.i2sDin.description"
+    },
+    {
+      "path": "i2s_sck",
+      "web_name": "i2sSck",
+      "type": "number",
+      "group": "moduleConfig.audio.audioConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.audio.i2sSck.label",
+      "description": "moduleConfig.audio.i2sSck.description"
+    }
+  ],
+  "module.canned_message": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "moduleConfig.cannedMessage.cannedMessageConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.cannedMessage.enabled.label",
+      "description": "moduleConfig.cannedMessage.enabled.description"
+    },
+    {
+      "path": "rotary1_enabled",
+      "web_name": "rotary1Enabled",
+      "type": "toggle",
+      "group": "moduleConfig.cannedMessage.cannedMessageConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.cannedMessage.rotary1Enabled.label",
+      "description": "moduleConfig.cannedMessage.rotary1Enabled.description"
+    },
+    {
+      "path": "inputbroker_pin_a",
+      "web_name": "inputbrokerPinA",
+      "type": "number",
+      "group": "moduleConfig.cannedMessage.cannedMessageConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.cannedMessage.inputbrokerPinA.label",
+      "description": "moduleConfig.cannedMessage.inputbrokerPinA.description"
+    },
+    {
+      "path": "inputbroker_pin_b",
+      "web_name": "inputbrokerPinB",
+      "type": "number",
+      "group": "moduleConfig.cannedMessage.cannedMessageConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.cannedMessage.inputbrokerPinB.label",
+      "description": "moduleConfig.cannedMessage.inputbrokerPinB.description"
+    },
+    {
+      "path": "inputbroker_pin_press",
+      "web_name": "inputbrokerPinPress",
+      "type": "number",
+      "group": "moduleConfig.cannedMessage.cannedMessageConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.cannedMessage.inputbrokerPinPress.label",
+      "description": "moduleConfig.cannedMessage.inputbrokerPinPress.description"
+    },
+    {
+      "path": "inputbroker_event_press",
+      "web_name": "inputbrokerEventPress",
+      "type": "select",
+      "group": "moduleConfig.cannedMessage.cannedMessageConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.cannedMessage.inputbrokerEventPress.label",
+      "description": "moduleConfig.cannedMessage.inputbrokerEventPress.description"
+    },
+    {
+      "path": "inputbroker_event_cw",
+      "web_name": "inputbrokerEventCw",
+      "type": "select",
+      "group": "moduleConfig.cannedMessage.cannedMessageConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.cannedMessage.inputbrokerEventCw.label",
+      "description": "moduleConfig.cannedMessage.inputbrokerEventCw.description"
+    },
+    {
+      "path": "inputbroker_event_ccw",
+      "web_name": "inputbrokerEventCcw",
+      "type": "select",
+      "group": "moduleConfig.cannedMessage.cannedMessageConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.cannedMessage.inputbrokerEventCcw.label",
+      "description": "moduleConfig.cannedMessage.inputbrokerEventCcw.description"
+    },
+    {
+      "path": "updown1_enabled",
+      "web_name": "updown1Enabled",
+      "type": "toggle",
+      "group": "moduleConfig.cannedMessage.cannedMessageConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.cannedMessage.updown1Enabled.label",
+      "description": "moduleConfig.cannedMessage.updown1Enabled.description"
+    },
+    {
+      "path": "allow_input_source",
+      "web_name": "allowInputSource",
+      "type": "text",
+      "group": "moduleConfig.cannedMessage.cannedMessageConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.cannedMessage.allowInputSource.label",
+      "description": "moduleConfig.cannedMessage.allowInputSource.description"
+    },
+    {
+      "path": "send_bell",
+      "web_name": "sendBell",
+      "type": "toggle",
+      "group": "moduleConfig.cannedMessage.cannedMessageConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.cannedMessage.sendBell.label",
+      "description": "moduleConfig.cannedMessage.sendBell.description"
+    }
+  ],
+  "module.detection_sensor": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "moduleConfig.detectionSensor.detectionSensorConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.detectionSensor.enabled.label",
+      "description": "moduleConfig.detectionSensor.enabled.description"
+    },
+    {
+      "path": "minimum_broadcast_secs",
+      "web_name": "minimumBroadcastSecs",
+      "type": "number",
+      "group": "moduleConfig.detectionSensor.detectionSensorConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.detectionSensor.minimumBroadcastSecs.label"
+    },
+    {
+      "path": "state_broadcast_secs",
+      "web_name": "stateBroadcastSecs",
+      "type": "number",
+      "group": "moduleConfig.detectionSensor.detectionSensorConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.detectionSensor.stateBroadcastSecs.label",
+      "description": "moduleConfig.detectionSensor.stateBroadcastSecs.description"
+    },
+    {
+      "path": "send_bell",
+      "web_name": "sendBell",
+      "type": "toggle",
+      "group": "moduleConfig.detectionSensor.detectionSensorConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.detectionSensor.sendBell.label",
+      "description": "moduleConfig.detectionSensor.sendBell.description"
+    },
+    {
+      "path": "name",
+      "web_name": "name",
+      "type": "text",
+      "group": "moduleConfig.detectionSensor.detectionSensorConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.detectionSensor.name.label",
+      "description": "moduleConfig.detectionSensor.name.description"
+    },
+    {
+      "path": "monitor_pin",
+      "web_name": "monitorPin",
+      "type": "number",
+      "group": "moduleConfig.detectionSensor.detectionSensorConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.detectionSensor.monitorPin.label",
+      "description": "moduleConfig.detectionSensor.monitorPin.description"
+    },
+    {
+      "path": "detection_trigger_type",
+      "web_name": "detectionTriggerType",
+      "type": "select",
+      "group": "moduleConfig.detectionSensor.detectionSensorConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.detectionSensor.detectionTriggerType.label"
+    },
+    {
+      "path": "use_pullup",
+      "web_name": "usePullup",
+      "type": "toggle",
+      "group": "moduleConfig.detectionSensor.detectionSensorConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.detectionSensor.usePullup.label",
+      "description": "moduleConfig.detectionSensor.usePullup.description"
+    }
+  ],
+  "module.external_notification": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "moduleConfig.externalNotification.externalNotificationConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.enabled.label",
+      "description": "moduleConfig.externalNotification.enabled.description"
+    },
+    {
+      "path": "alert_message",
+      "web_name": "alertMessage",
+      "type": "toggle",
+      "group": "moduleConfig.externalNotification.notificationsOnMessage.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.alertMessage.label",
+      "description": "moduleConfig.externalNotification.alertMessage.description"
+    },
+    {
+      "path": "alert_message_buzzer",
+      "web_name": "alertMessageBuzzer",
+      "type": "toggle",
+      "group": "moduleConfig.externalNotification.notificationsOnMessage.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.alertMessageBuzzer.label"
+    },
+    {
+      "path": "alert_message_vibra",
+      "web_name": "alertMessageVibra",
+      "type": "toggle",
+      "group": "moduleConfig.externalNotification.notificationsOnMessage.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.alertMessageVibra.label"
+    },
+    {
+      "path": "alert_bell",
+      "web_name": "alertBell",
+      "type": "toggle",
+      "group": "moduleConfig.externalNotification.notificationsOnAlert.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.alertBell.label",
+      "description": "moduleConfig.externalNotification.alertBell.description"
+    },
+    {
+      "path": "alert_bell_buzzer",
+      "web_name": "alertBellBuzzer",
+      "type": "toggle",
+      "group": "moduleConfig.externalNotification.notificationsOnAlert.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.alertBellBuzzer.label"
+    },
+    {
+      "path": "alert_bell_vibra",
+      "web_name": "alertBellVibra",
+      "type": "toggle",
+      "group": "moduleConfig.externalNotification.notificationsOnAlert.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.alertBellVibra.label",
+      "description": "moduleConfig.externalNotification.alertBellVibra.description"
+    },
+    {
+      "path": "output",
+      "web_name": "output",
+      "type": "number",
+      "group": "moduleConfig.externalNotification.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.output.label",
+      "description": "moduleConfig.externalNotification.output.description"
+    },
+    {
+      "path": "active",
+      "web_name": "active",
+      "type": "toggle",
+      "group": "moduleConfig.externalNotification.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.active.label",
+      "description": "moduleConfig.externalNotification.active.description"
+    },
+    {
+      "path": "output_buzzer",
+      "web_name": "outputBuzzer",
+      "type": "number",
+      "group": "moduleConfig.externalNotification.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.outputBuzzer.label",
+      "description": "moduleConfig.externalNotification.outputBuzzer.description"
+    },
+    {
+      "path": "use_pwm",
+      "web_name": "usePwm",
+      "type": "toggle",
+      "group": "moduleConfig.externalNotification.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.usePwm.label",
+      "description": "moduleConfig.externalNotification.usePwm.description"
+    },
+    {
+      "path": "output_vibra",
+      "web_name": "outputVibra",
+      "type": "number",
+      "group": "moduleConfig.externalNotification.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.outputVibra.label",
+      "description": "moduleConfig.externalNotification.outputVibra.description"
+    },
+    {
+      "path": "output_ms",
+      "web_name": "outputMs",
+      "type": "number",
+      "group": "moduleConfig.externalNotification.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.outputMs.label",
+      "description": "moduleConfig.externalNotification.outputMs.description"
+    },
+    {
+      "path": "nag_timeout",
+      "web_name": "nagTimeout",
+      "type": "number",
+      "group": "moduleConfig.externalNotification.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.nagTimeout.label",
+      "description": "moduleConfig.externalNotification.nagTimeout.description"
+    },
+    {
+      "path": "use_i2s_as_buzzer",
+      "web_name": "useI2sAsBuzzer",
+      "type": "toggle",
+      "group": "moduleConfig.externalNotification.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.externalNotification.useI2sAsBuzzer.label",
+      "description": "moduleConfig.externalNotification.useI2sAsBuzzer.description"
+    }
+  ],
+  "module.mqtt": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "moduleConfig.mqtt.mqttConfigCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.mqtt.enabled.label",
+      "description": "moduleConfig.mqtt.enabled.description"
+    },
+    {
+      "path": "address",
+      "web_name": "address",
+      "type": "text",
+      "group": "moduleConfig.mqtt.mqttConfigCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.address.label",
+      "description": "moduleConfig.mqtt.address.description"
+    },
+    {
+      "path": "username",
+      "web_name": "username",
+      "type": "text",
+      "group": "moduleConfig.mqtt.mqttConfigCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.username.label",
+      "description": "moduleConfig.mqtt.username.description"
+    },
+    {
+      "path": "password",
+      "web_name": "password",
+      "type": "password",
+      "group": "moduleConfig.mqtt.mqttConfigCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.password.label",
+      "description": "moduleConfig.mqtt.password.description"
+    },
+    {
+      "path": "encryption_enabled",
+      "web_name": "encryptionEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.mqtt.mqttConfigCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.encryptionEnabled.label",
+      "description": "moduleConfig.mqtt.encryptionEnabled.description"
+    },
+    {
+      "path": "json_enabled",
+      "web_name": "jsonEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.mqtt.mqttConfigCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.jsonEnabled.label",
+      "description": "moduleConfig.mqtt.jsonEnabled.description"
+    },
+    {
+      "path": "tls_enabled",
+      "web_name": "tlsEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.mqtt.mqttConfigCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.tlsEnabled.label",
+      "description": "moduleConfig.mqtt.tlsEnabled.description"
+    },
+    {
+      "path": "root",
+      "web_name": "root",
+      "type": "text",
+      "group": "moduleConfig.mqtt.mqttConfigCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.root.label",
+      "description": "moduleConfig.mqtt.root.description"
+    },
+    {
+      "path": "proxy_to_client_enabled",
+      "web_name": "proxyToClientEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.mqtt.mqttConfigCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.proxyToClientEnabled.label",
+      "description": "moduleConfig.mqtt.proxyToClientEnabled.description"
+    },
+    {
+      "path": "map_reporting_enabled",
+      "web_name": "mapReportingEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.mqtt.mapReportingCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.mapReportingEnabled.label",
+      "description": "moduleConfig.mqtt.mapReportingEnabled.description"
+    },
+    {
+      "path": "map_report_settings.should_report_location",
+      "web_name": "mapReportSettings.shouldReportLocation",
+      "type": "toggle",
+      "group": "moduleConfig.mqtt.mapReportingCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        },
+        {
+          "path": "map_reporting_enabled",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.mapReportSettings.shouldReportLocation.label"
+    },
+    {
+      "path": "map_report_settings.position_precision",
+      "web_name": "mapReportSettings.positionPrecision",
+      "type": "select",
+      "group": "moduleConfig.mqtt.mapReportingCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        },
+        {
+          "path": "map_reporting_enabled",
+          "invert": false
+        },
+        {
+          "path": "map_report_settings.should_report_location",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.mapReportSettings.positionPrecision.label"
+    },
+    {
+      "path": "map_report_settings.publish_interval_secs",
+      "web_name": "mapReportSettings.publishIntervalSecs",
+      "type": "number",
+      "group": "moduleConfig.mqtt.mapReportingCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "enabled",
+          "invert": false
+        },
+        {
+          "path": "map_reporting_enabled",
+          "invert": false
+        },
+        {
+          "path": "map_report_settings.should_report_location",
+          "invert": false
+        }
+      ],
+      "label": "moduleConfig.mqtt.mapReportSettings.publishIntervalSecs.label"
+    }
+  ],
+  "module.neighbor_info": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "moduleConfig.neighborInfo.neighborInfoConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.neighborInfo.enabled.label",
+      "description": "moduleConfig.neighborInfo.enabled.description"
+    },
+    {
+      "path": "update_interval",
+      "web_name": "updateInterval",
+      "type": "number",
+      "group": "moduleConfig.neighborInfo.neighborInfoConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.neighborInfo.updateInterval.label",
+      "description": "moduleConfig.neighborInfo.updateInterval.description"
+    },
+    {
+      "path": "transmit_over_lora",
+      "web_name": "transmitOverLora",
+      "type": "toggle",
+      "group": "moduleConfig.neighborInfo.neighborInfoConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.neighborInfo.transmitOverLora.label",
+      "description": "moduleConfig.neighborInfo.transmitOverLora.description"
+    }
+  ],
+  "module.paxcounter": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "moduleConfig.paxcounter.paxcounterConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.paxcounter.enabled.label",
+      "description": "moduleConfig.paxcounter.enabled.description"
+    },
+    {
+      "path": "paxcounter_update_interval",
+      "web_name": "paxcounterUpdateInterval",
+      "type": "number",
+      "group": "moduleConfig.paxcounter.paxcounterConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.paxcounter.paxcounterUpdateInterval.label",
+      "description": "moduleConfig.paxcounter.paxcounterUpdateInterval.description"
+    },
+    {
+      "path": "wifi_threshold",
+      "web_name": "wifiThreshold",
+      "type": "number",
+      "group": "moduleConfig.paxcounter.paxcounterConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.paxcounter.wifiThreshold.label",
+      "description": "moduleConfig.paxcounter.wifiThreshold.description"
+    },
+    {
+      "path": "ble_threshold",
+      "web_name": "bleThreshold",
+      "type": "number",
+      "group": "moduleConfig.paxcounter.paxcounterConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.paxcounter.bleThreshold.label",
+      "description": "moduleConfig.paxcounter.bleThreshold.description"
+    }
+  ],
+  "module.range_test": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "moduleConfig.rangeTest.rangeTestConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.rangeTest.enabled.label",
+      "description": "moduleConfig.rangeTest.enabled.description"
+    },
+    {
+      "path": "sender",
+      "web_name": "sender",
+      "type": "number",
+      "group": "moduleConfig.rangeTest.rangeTestConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.rangeTest.sender.label",
+      "description": "moduleConfig.rangeTest.sender.description"
+    },
+    {
+      "path": "save",
+      "web_name": "save",
+      "type": "toggle",
+      "group": "moduleConfig.rangeTest.rangeTestConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.rangeTest.save.label",
+      "description": "moduleConfig.rangeTest.save.description"
+    }
+  ],
+  "module.remote_hardware": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "moduleConfig.remoteHardware.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.remoteHardware.enabled.label",
+      "description": "moduleConfig.remoteHardware.enabled.description"
+    },
+    {
+      "path": "allow_undefined_pin_access",
+      "web_name": "allowUndefinedPinAccess",
+      "type": "toggle",
+      "group": "moduleConfig.remoteHardware.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.remoteHardware.allowUndefinedPinAccess.label"
+    }
+  ],
+  "module.serial": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "moduleConfig.serial.serialConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.serial.enabled.label",
+      "description": "moduleConfig.serial.enabled.description"
+    },
+    {
+      "path": "echo",
+      "web_name": "echo",
+      "type": "toggle",
+      "group": "moduleConfig.serial.serialConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.serial.echo.label",
+      "description": "moduleConfig.serial.echo.description"
+    },
+    {
+      "path": "rxd",
+      "web_name": "rxd",
+      "type": "number",
+      "group": "moduleConfig.serial.serialConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.serial.rxd.label",
+      "description": "moduleConfig.serial.rxd.description"
+    },
+    {
+      "path": "txd",
+      "web_name": "txd",
+      "type": "number",
+      "group": "moduleConfig.serial.serialConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.serial.txd.label",
+      "description": "moduleConfig.serial.txd.description"
+    },
+    {
+      "path": "baud",
+      "web_name": "baud",
+      "type": "select",
+      "group": "moduleConfig.serial.serialConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.serial.baud.label",
+      "description": "moduleConfig.serial.baud.description"
+    },
+    {
+      "path": "timeout",
+      "web_name": "timeout",
+      "type": "number",
+      "group": "moduleConfig.serial.serialConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.serial.timeout.label",
+      "description": "moduleConfig.serial.timeout.description"
+    },
+    {
+      "path": "mode",
+      "web_name": "mode",
+      "type": "select",
+      "group": "moduleConfig.serial.serialConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.serial.mode.label",
+      "description": "moduleConfig.serial.mode.description"
+    },
+    {
+      "path": "override_console_serial_port",
+      "web_name": "overrideConsoleSerialPort",
+      "type": "toggle",
+      "group": "moduleConfig.serial.serialConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.serial.overrideConsoleSerialPort.label",
+      "description": "moduleConfig.serial.overrideConsoleSerialPort.description"
+    }
+  ],
+  "module.statusmessage": [
+    {
+      "path": "node_status",
+      "web_name": "nodeStatus",
+      "type": "text",
+      "group": "moduleConfig.statusMessage.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.statusMessage.nodeStatus.label",
+      "description": "moduleConfig.statusMessage.nodeStatus.description"
+    }
+  ],
+  "module.store_forward": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "moduleConfig.storeForward.storeForwardConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.storeForward.enabled.label",
+      "description": "moduleConfig.storeForward.enabled.description"
+    },
+    {
+      "path": "heartbeat",
+      "web_name": "heartbeat",
+      "type": "toggle",
+      "group": "moduleConfig.storeForward.storeForwardConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.storeForward.heartbeat.label",
+      "description": "moduleConfig.storeForward.heartbeat.description"
+    },
+    {
+      "path": "records",
+      "web_name": "records",
+      "type": "number",
+      "group": "moduleConfig.storeForward.storeForwardConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.storeForward.records.label",
+      "description": "moduleConfig.storeForward.records.description"
+    },
+    {
+      "path": "history_return_max",
+      "web_name": "historyReturnMax",
+      "type": "number",
+      "group": "moduleConfig.storeForward.storeForwardConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.storeForward.historyReturnMax.label",
+      "description": "moduleConfig.storeForward.historyReturnMax.description"
+    },
+    {
+      "path": "history_return_window",
+      "web_name": "historyReturnWindow",
+      "type": "number",
+      "group": "moduleConfig.storeForward.storeForwardConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.storeForward.historyReturnWindow.label",
+      "description": "moduleConfig.storeForward.historyReturnWindow.description"
+    },
+    {
+      "path": "is_server",
+      "web_name": "isServer",
+      "type": "toggle",
+      "group": "moduleConfig.storeForward.storeForwardConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.storeForward.isServer.label",
+      "description": "moduleConfig.storeForward.isServer.description"
+    }
+  ],
+  "module.tak": [
+    {
+      "path": "team",
+      "web_name": "team",
+      "type": "select",
+      "group": "moduleConfig.tak.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.tak.team.label",
+      "description": "moduleConfig.tak.team.description"
+    },
+    {
+      "path": "role",
+      "web_name": "role",
+      "type": "select",
+      "group": "moduleConfig.tak.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.tak.role.label",
+      "description": "moduleConfig.tak.role.description"
+    }
+  ],
+  "module.telemetry": [
+    {
+      "path": "device_telemetry_enabled",
+      "web_name": "deviceTelemetryEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.deviceTelemetryEnabled.label"
+    },
+    {
+      "path": "device_update_interval",
+      "web_name": "deviceUpdateInterval",
+      "type": "number",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.deviceUpdateInterval.label",
+      "description": "moduleConfig.telemetry.deviceUpdateInterval.description"
+    },
+    {
+      "path": "environment_measurement_enabled",
+      "web_name": "environmentMeasurementEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.environmentMeasurementEnabled.label"
+    },
+    {
+      "path": "environment_update_interval",
+      "web_name": "environmentUpdateInterval",
+      "type": "number",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.environmentUpdateInterval.label",
+      "description": "moduleConfig.telemetry.environmentUpdateInterval.description"
+    },
+    {
+      "path": "environment_screen_enabled",
+      "web_name": "environmentScreenEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.environmentScreenEnabled.label",
+      "description": "moduleConfig.telemetry.environmentScreenEnabled.description"
+    },
+    {
+      "path": "environment_display_fahrenheit",
+      "web_name": "environmentDisplayFahrenheit",
+      "type": "toggle",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.environmentDisplayFahrenheit.label"
+    },
+    {
+      "path": "air_quality_enabled",
+      "web_name": "airQualityEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.airQualityEnabled.label",
+      "description": "moduleConfig.telemetry.airQualityEnabled.description"
+    },
+    {
+      "path": "air_quality_interval",
+      "web_name": "airQualityInterval",
+      "type": "number",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.airQualityInterval.label",
+      "description": "moduleConfig.telemetry.airQualityInterval.description"
+    },
+    {
+      "path": "air_quality_screen_enabled",
+      "web_name": "airQualityScreenEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.airQualityScreenEnabled.label",
+      "description": "moduleConfig.telemetry.airQualityScreenEnabled.description"
+    },
+    {
+      "path": "power_measurement_enabled",
+      "web_name": "powerMeasurementEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.powerMeasurementEnabled.label",
+      "description": "moduleConfig.telemetry.powerMeasurementEnabled.description"
+    },
+    {
+      "path": "power_update_interval",
+      "web_name": "powerUpdateInterval",
+      "type": "number",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.powerUpdateInterval.label",
+      "description": "moduleConfig.telemetry.powerUpdateInterval.description"
+    },
+    {
+      "path": "power_screen_enabled",
+      "web_name": "powerScreenEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.telemetry.telemetryConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.telemetry.powerScreenEnabled.label",
+      "description": "moduleConfig.telemetry.powerScreenEnabled.description"
+    }
+  ],
+  "module.traffic_management": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.enabled.label",
+      "description": "moduleConfig.trafficManagement.enabled.description"
+    },
+    {
+      "path": "position_dedup_enabled",
+      "web_name": "positionDedupEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.positionDedupEnabled.label"
+    },
+    {
+      "path": "position_precision_bits",
+      "web_name": "positionPrecisionBits",
+      "type": "number",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.positionPrecisionBits.label"
+    },
+    {
+      "path": "position_min_interval_secs",
+      "web_name": "positionMinIntervalSecs",
+      "type": "number",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.positionMinIntervalSecs.label"
+    },
+    {
+      "path": "nodeinfo_direct_response",
+      "web_name": "nodeinfoDirectResponse",
+      "type": "toggle",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.nodeinfoDirectResponse.label"
+    },
+    {
+      "path": "nodeinfo_direct_response_max_hops",
+      "web_name": "nodeinfoDirectResponseMaxHops",
+      "type": "number",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.nodeinfoDirectResponseMaxHops.label"
+    },
+    {
+      "path": "rate_limit_enabled",
+      "web_name": "rateLimitEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.rateLimitEnabled.label",
+      "description": "moduleConfig.trafficManagement.rateLimitEnabled.description"
+    },
+    {
+      "path": "rate_limit_window_secs",
+      "web_name": "rateLimitWindowSecs",
+      "type": "number",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.rateLimitWindowSecs.label"
+    },
+    {
+      "path": "rate_limit_max_packets",
+      "web_name": "rateLimitMaxPackets",
+      "type": "number",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.rateLimitMaxPackets.label"
+    },
+    {
+      "path": "drop_unknown_enabled",
+      "web_name": "dropUnknownEnabled",
+      "type": "toggle",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.dropUnknownEnabled.label"
+    },
+    {
+      "path": "unknown_packet_threshold",
+      "web_name": "unknownPacketThreshold",
+      "type": "number",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.unknownPacketThreshold.label"
+    },
+    {
+      "path": "exhaust_hop_telemetry",
+      "web_name": "exhaustHopTelemetry",
+      "type": "toggle",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.exhaustHopTelemetry.label"
+    },
+    {
+      "path": "exhaust_hop_position",
+      "web_name": "exhaustHopPosition",
+      "type": "toggle",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.exhaustHopPosition.label"
+    },
+    {
+      "path": "router_preserve_hops",
+      "web_name": "routerPreserveHops",
+      "type": "toggle",
+      "group": "moduleConfig.trafficManagement.title",
+      "disabled": false,
+      "conditions": [],
+      "label": "moduleConfig.trafficManagement.routerPreserveHops.label"
+    }
+  ],
+  "config.bluetooth": [
+    {
+      "path": "enabled",
+      "web_name": "enabled",
+      "type": "toggle",
+      "group": "config.bluetooth.bluetoothConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.bluetooth.enabled.label",
+      "description": "config.bluetooth.enabled.description"
+    },
+    {
+      "path": "mode",
+      "web_name": "mode",
+      "type": "select",
+      "group": "config.bluetooth.bluetoothConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.bluetooth.pairingMode.label",
+      "description": "config.bluetooth.pairingMode.description"
+    },
+    {
+      "path": "fixed_pin",
+      "web_name": "fixedPin",
+      "type": "number",
+      "group": "config.bluetooth.bluetoothConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.bluetooth.pin.label",
+      "description": "config.bluetooth.pin.description"
+    }
+  ],
+  "config.device": [
+    {
+      "path": "role",
+      "web_name": "role",
+      "type": "select",
+      "group": "config.device.options.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.device.role.label",
+      "description": "config.device.role.description"
+    },
+    {
+      "path": "rebroadcast_mode",
+      "web_name": "rebroadcastMode",
+      "type": "select",
+      "group": "config.device.options.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.device.rebroadcastMode.label",
+      "description": "config.device.rebroadcastMode.description"
+    },
+    {
+      "path": "node_info_broadcast_secs",
+      "web_name": "nodeInfoBroadcastSecs",
+      "type": "number",
+      "group": "config.device.options.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.device.nodeInfoBroadcastInterval.label",
+      "description": "config.device.nodeInfoBroadcastInterval.description"
+    },
+    {
+      "path": "double_tap_as_button_press",
+      "web_name": "doubleTapAsButtonPress",
+      "type": "toggle",
+      "group": "config.device.hardware.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.device.doubleTapAsButtonPress.label",
+      "description": "config.device.doubleTapAsButtonPress.description"
+    },
+    {
+      "path": "disable_triple_click",
+      "web_name": "disableTripleClick",
+      "type": "toggle",
+      "group": "config.device.hardware.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.device.disableTripleClick.label",
+      "description": "config.device.disableTripleClick.description"
+    },
+    {
+      "path": "led_heartbeat_disabled",
+      "web_name": "ledHeartbeatDisabled",
+      "type": "toggle",
+      "group": "config.device.hardware.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.device.ledHeartbeatDisabled.label",
+      "description": "config.device.ledHeartbeatDisabled.description"
+    },
+    {
+      "path": "tzdef",
+      "web_name": "tzdef",
+      "type": "text",
+      "group": "config.device.timeZone.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.device.posixTimezone.label",
+      "description": "config.device.posixTimezone.description"
+    },
+    {
+      "path": "button_gpio",
+      "web_name": "buttonGpio",
+      "type": "number",
+      "group": "config.device.gpio.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.device.buttonPin.label",
+      "description": "config.device.buttonPin.description"
+    },
+    {
+      "path": "buzzer_gpio",
+      "web_name": "buzzerGpio",
+      "type": "number",
+      "group": "config.device.gpio.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.device.buzzerPin.label",
+      "description": "config.device.buzzerPin.description"
+    }
+  ],
+  "config.display": [
+    {
+      "path": "compass_north_top",
+      "web_name": "compassNorthTop",
+      "type": "toggle",
+      "group": "config.display.deviceDisplay.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.compassNorthTop.label",
+      "description": "config.display.compassNorthTop.description"
+    },
+    {
+      "path": "use_12h_clock",
+      "web_name": "use12hClock",
+      "type": "toggle",
+      "group": "config.display.deviceDisplay.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.twelveHourClock.label",
+      "description": "config.display.twelveHourClock.description"
+    },
+    {
+      "path": "heading_bold",
+      "web_name": "headingBold",
+      "type": "toggle",
+      "group": "config.display.deviceDisplay.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.headingBold.label",
+      "description": "config.display.headingBold.description"
+    },
+    {
+      "path": "units",
+      "web_name": "units",
+      "type": "select",
+      "group": "config.display.deviceDisplay.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.displayUnits.label",
+      "description": "config.display.displayUnits.description"
+    },
+    {
+      "path": "screen_on_secs",
+      "web_name": "screenOnSecs",
+      "type": "number",
+      "group": "config.display.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.screenTimeout.label",
+      "description": "config.display.screenTimeout.description"
+    },
+    {
+      "path": "auto_screen_carousel_secs",
+      "web_name": "autoScreenCarouselSecs",
+      "type": "number",
+      "group": "config.display.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.carouselDelay.label",
+      "description": "config.display.carouselDelay.description"
+    },
+    {
+      "path": "wake_on_tap_or_motion",
+      "web_name": "wakeOnTapOrMotion",
+      "type": "toggle",
+      "group": "config.display.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.wakeOnTapOrMotion.label",
+      "description": "config.display.wakeOnTapOrMotion.description"
+    },
+    {
+      "path": "flip_screen",
+      "web_name": "flipScreen",
+      "type": "toggle",
+      "group": "config.display.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.flipScreen.label",
+      "description": "config.display.flipScreen.description"
+    },
+    {
+      "path": "displaymode",
+      "web_name": "displaymode",
+      "type": "select",
+      "group": "config.display.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.displayMode.label",
+      "description": "config.display.displayMode.description"
+    },
+    {
+      "path": "oled",
+      "web_name": "oled",
+      "type": "select",
+      "group": "config.display.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.oledType.label",
+      "description": "config.display.oledType.description"
+    },
+    {
+      "path": "compass_orientation",
+      "web_name": "compassOrientation",
+      "type": "select",
+      "group": "config.display.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.compassOrientation.label",
+      "description": "config.display.compassOrientation.description"
+    },
+    {
+      "path": "enable_message_bubbles",
+      "web_name": "enableMessageBubbles",
+      "type": "toggle",
+      "group": "config.display.advanced.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.display.enableMessageBubbles.label",
+      "description": "config.display.enableMessageBubbles.description"
+    }
+  ],
+  "config.lora": [
+    {
+      "path": "region",
+      "web_name": "region",
+      "type": "select",
+      "group": "config.lora.optionsCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.region.label",
+      "description": "config.lora.region.description"
+    },
+    {
+      "path": "use_preset",
+      "web_name": "usePreset",
+      "type": "toggle",
+      "group": "config.lora.optionsCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.usePreset.label",
+      "description": "config.lora.usePreset.description"
+    },
+    {
+      "path": "modem_preset",
+      "web_name": "modemPreset",
+      "type": "select",
+      "group": "config.lora.optionsCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "use_preset",
+          "invert": false
+        }
+      ],
+      "label": "config.lora.modemPreset.label",
+      "description": "config.lora.modemPreset.description"
+    },
+    {
+      "path": "bandwidth",
+      "web_name": "bandwidth",
+      "type": "number",
+      "group": "config.lora.optionsCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "use_preset",
+          "invert": true
+        }
+      ],
+      "label": "config.lora.bandwidth.label",
+      "description": "config.lora.bandwidth.description"
+    },
+    {
+      "path": "spread_factor",
+      "web_name": "spreadFactor",
+      "type": "number",
+      "group": "config.lora.optionsCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "use_preset",
+          "invert": true
+        }
+      ],
+      "label": "config.lora.spreadingFactor.label",
+      "description": "config.lora.spreadingFactor.description"
+    },
+    {
+      "path": "coding_rate",
+      "web_name": "codingRate",
+      "type": "number",
+      "group": "config.lora.optionsCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "use_preset",
+          "invert": true
+        }
+      ],
+      "label": "config.lora.codingRate.label",
+      "description": "config.lora.codingRate.description"
+    },
+    {
+      "path": "ignore_mqtt",
+      "web_name": "ignoreMqtt",
+      "type": "toggle",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.ignoreMqtt.label",
+      "description": "config.lora.ignoreMqtt.description"
+    },
+    {
+      "path": "config_ok_to_mqtt",
+      "web_name": "configOkToMqtt",
+      "type": "toggle",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.okToMqtt.label",
+      "description": "config.lora.okToMqtt.description"
+    },
+    {
+      "path": "tx_enabled",
+      "web_name": "txEnabled",
+      "type": "toggle",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.transmitEnabled.label",
+      "description": "config.lora.transmitEnabled.description"
+    },
+    {
+      "path": "override_duty_cycle",
+      "web_name": "overrideDutyCycle",
+      "type": "toggle",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.overrideDutyCycle.label",
+      "description": "config.lora.overrideDutyCycle.description"
+    },
+    {
+      "path": "hop_limit",
+      "web_name": "hopLimit",
+      "type": "select",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.hopLimit.label",
+      "description": "config.lora.hopLimit.description",
+      "choices": [
+        {
+          "label": "0",
+          "value": 0
+        },
+        {
+          "label": "1",
+          "value": 1
+        },
+        {
+          "label": "2",
+          "value": 2
+        },
+        {
+          "label": "3",
+          "value": 3
+        },
+        {
+          "label": "4",
+          "value": 4
+        },
+        {
+          "label": "5",
+          "value": 5
+        },
+        {
+          "label": "6",
+          "value": 6
+        },
+        {
+          "label": "7",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "path": "channel_num",
+      "web_name": "channelNum",
+      "type": "number",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.frequencySlot.label",
+      "description": "config.lora.frequencySlot.description"
+    },
+    {
+      "path": "frequency_offset",
+      "web_name": "frequencyOffset",
+      "type": "number",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.frequencyOffset.label",
+      "description": "config.lora.frequencyOffset.description"
+    },
+    {
+      "path": "sx126x_rx_boosted_gain",
+      "web_name": "sx126xRxBoostedGain",
+      "type": "toggle",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.boostedRxGain.label",
+      "description": "config.lora.boostedRxGain.description"
+    },
+    {
+      "path": "override_frequency",
+      "web_name": "overrideFrequency",
+      "type": "number",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.overrideFrequency.label",
+      "description": "config.lora.overrideFrequency.description"
+    },
+    {
+      "path": "tx_power",
+      "web_name": "txPower",
+      "type": "number",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.transmitPower.label",
+      "description": "config.lora.transmitPower.description"
+    },
+    {
+      "path": "fem_lna_mode",
+      "web_name": "femLnaMode",
+      "type": "select",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.femLnaMode.label",
+      "description": "config.lora.femLnaMode.description"
+    },
+    {
+      "path": "serial_hal_only",
+      "web_name": "serialHalOnly",
+      "type": "toggle",
+      "group": "config.lora.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.lora.serialHalOnly.label",
+      "description": "config.lora.serialHalOnly.description"
+    }
+  ],
+  "config.network": [
+    {
+      "path": "wifi_enabled",
+      "web_name": "wifiEnabled",
+      "type": "toggle",
+      "group": "config.network.wifiOptions.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.network.wifiEnabled.label",
+      "description": "config.network.wifiEnabled.description"
+    },
+    {
+      "path": "wifi_ssid",
+      "web_name": "wifiSsid",
+      "type": "text",
+      "group": "config.network.wifiOptions.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "wifi_enabled",
+          "invert": false
+        }
+      ],
+      "label": "config.network.ssid.label",
+      "description": "config.network.ssid.label"
+    },
+    {
+      "path": "wifi_psk",
+      "web_name": "wifiPsk",
+      "type": "password",
+      "group": "config.network.wifiOptions.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "wifi_enabled",
+          "invert": false
+        }
+      ],
+      "label": "config.network.psk.label",
+      "description": "config.network.psk.description"
+    },
+    {
+      "path": "eth_enabled",
+      "web_name": "ethEnabled",
+      "type": "toggle",
+      "group": "config.network.ethernetOptionsCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.network.ethernetEnabled.label",
+      "description": "config.network.ethernetEnabled.description"
+    },
+    {
+      "path": "ntp_server",
+      "web_name": "ntpServer",
+      "type": "text",
+      "group": "config.network.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.network.ntpServer.label"
+    },
+    {
+      "path": "rsyslog_server",
+      "web_name": "rsyslogServer",
+      "type": "text",
+      "group": "config.network.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.network.rsyslogServer.label"
+    },
+    {
+      "path": "enabled_protocols",
+      "web_name": "enabledProtocols",
+      "type": "select",
+      "group": "config.network.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.network.meshViaUdp.label",
+      "description": "config.network.meshViaUdp.description"
+    },
+    {
+      "path": "address_mode",
+      "web_name": "addressMode",
+      "type": "select",
+      "group": "config.network.advancedCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.network.addressMode.label",
+      "description": "config.network.addressMode.description"
+    },
+    {
+      "path": "ipv4_config.ip",
+      "web_name": "ipv4Config.ip",
+      "type": "text",
+      "group": "config.network.advancedCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "address_mode",
+          "invert": false,
+          "selector": 0
+        }
+      ],
+      "label": "config.network.ip.label",
+      "description": "config.network.ip.description"
+    },
+    {
+      "path": "ipv4_config.gateway",
+      "web_name": "ipv4Config.gateway",
+      "type": "text",
+      "group": "config.network.advancedCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "address_mode",
+          "invert": false,
+          "selector": 0
+        }
+      ],
+      "label": "config.network.gateway.label",
+      "description": "config.network.gateway.description"
+    },
+    {
+      "path": "ipv4_config.subnet",
+      "web_name": "ipv4Config.subnet",
+      "type": "text",
+      "group": "config.network.advancedCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "address_mode",
+          "invert": false,
+          "selector": 0
+        }
+      ],
+      "label": "config.network.subnet.label",
+      "description": "config.network.subnet.description"
+    },
+    {
+      "path": "ipv4_config.dns",
+      "web_name": "ipv4Config.dns",
+      "type": "text",
+      "group": "config.network.advancedCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "address_mode",
+          "invert": false,
+          "selector": 0
+        }
+      ],
+      "label": "config.network.dns.label",
+      "description": "config.network.dns.description"
+    }
+  ],
+  "config.position": [
+    {
+      "path": "position_broadcast_secs",
+      "web_name": "positionBroadcastSecs",
+      "type": "number",
+      "group": "config.position.positionPacket.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.position.broadcastInterval.label",
+      "description": "config.position.broadcastInterval.description"
+    },
+    {
+      "path": "position_broadcast_smart_enabled",
+      "web_name": "positionBroadcastSmartEnabled",
+      "type": "toggle",
+      "group": "config.position.positionPacket.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.position.smartPositionEnabled.label",
+      "description": "config.position.smartPositionEnabled.description"
+    },
+    {
+      "path": "broadcast_smart_minimum_interval_secs",
+      "web_name": "broadcastSmartMinimumIntervalSecs",
+      "type": "number",
+      "group": "config.position.positionPacket.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "position_broadcast_smart_enabled",
+          "invert": false
+        }
+      ],
+      "label": "config.position.smartPositionMinInterval.label",
+      "description": "config.position.smartPositionMinInterval.description"
+    },
+    {
+      "path": "broadcast_smart_minimum_distance",
+      "web_name": "broadcastSmartMinimumDistance",
+      "type": "number",
+      "group": "config.position.positionPacket.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "position_broadcast_smart_enabled",
+          "invert": false
+        }
+      ],
+      "label": "config.position.smartPositionMinDistance.label",
+      "description": "config.position.smartPositionMinDistance.description"
+    },
+    {
+      "path": "fixed_position",
+      "web_name": "fixedPosition",
+      "type": "toggle",
+      "group": "config.position.deviceGps.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.position.fixedPosition.label",
+      "description": "config.position.fixedPosition.description"
+    },
+    {
+      "path": "gps_mode",
+      "web_name": "gpsMode",
+      "type": "select",
+      "group": "config.position.deviceGps.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "fixed_position",
+          "invert": true
+        }
+      ],
+      "label": "config.position.gpsMode.label",
+      "description": "config.position.gpsMode.description"
+    },
+    {
+      "path": "gps_update_interval",
+      "web_name": "gpsUpdateInterval",
+      "type": "number",
+      "group": "config.position.deviceGps.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "fixed_position",
+          "invert": true
+        }
+      ],
+      "label": "config.position.gpsUpdateInterval.label",
+      "description": "config.position.gpsUpdateInterval.description"
+    },
+    {
+      "path": "position_flags",
+      "web_name": "positionFlags",
+      "type": "multiSelect",
+      "group": "config.position.positionFlags.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.position.positionFlags.label",
+      "description": "config.position.positionFlags.description"
+    },
+    {
+      "path": "rx_gpio",
+      "web_name": "rxGpio",
+      "type": "number",
+      "group": "config.position.advancedDeviceGps.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.position.receivePin.label",
+      "description": "config.position.receivePin.description"
+    },
+    {
+      "path": "tx_gpio",
+      "web_name": "txGpio",
+      "type": "number",
+      "group": "config.position.advancedDeviceGps.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.position.transmitPin.label",
+      "description": "config.position.transmitPin.description"
+    },
+    {
+      "path": "gps_en_gpio",
+      "web_name": "gpsEnGpio",
+      "type": "number",
+      "group": "config.position.advancedDeviceGps.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.position.enablePin.label",
+      "description": "config.position.enablePin.description"
+    }
+  ],
+  "config.power": [
+    {
+      "path": "is_power_saving",
+      "web_name": "isPowerSaving",
+      "type": "toggle",
+      "group": "config.power.powerConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.power.powerSavingEnabled.label",
+      "description": "config.power.powerSavingEnabled.description"
+    },
+    {
+      "path": "on_battery_shutdown_after_secs",
+      "web_name": "onBatteryShutdownAfterSecs",
+      "type": "number",
+      "group": "config.power.powerConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.power.shutdownOnBatteryDelay.label",
+      "description": "config.power.shutdownOnBatteryDelay.description"
+    },
+    {
+      "path": "adc_multiplier_override",
+      "web_name": "adcMultiplierOverride",
+      "type": "number",
+      "group": "config.power.powerConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.power.adcMultiplierOverride.label",
+      "description": "config.power.adcMultiplierOverride.description"
+    },
+    {
+      "path": "wait_bluetooth_secs",
+      "web_name": "waitBluetoothSecs",
+      "type": "number",
+      "group": "config.power.powerConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.power.noConnectionBluetoothDisabled.label",
+      "description": "config.power.noConnectionBluetoothDisabled.description"
+    },
+    {
+      "path": "sds_secs",
+      "web_name": "sdsSecs",
+      "type": "number",
+      "group": "config.power.powerConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.power.superDeepSleepDuration.label",
+      "description": "config.power.superDeepSleepDuration.description"
+    },
+    {
+      "path": "min_wake_secs",
+      "web_name": "minWakeSecs",
+      "type": "number",
+      "group": "config.power.powerConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.power.minimumWakeTime.label",
+      "description": "config.power.minimumWakeTime.description"
+    },
+    {
+      "path": "device_battery_ina_address",
+      "web_name": "deviceBatteryInaAddress",
+      "type": "number",
+      "group": "config.power.powerConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.power.ina219Address.label",
+      "description": "config.power.ina219Address.description"
+    }
+  ],
+  "config.security": [
+    {
+      "path": "private_key",
+      "web_name": "privateKey",
+      "type": "passwordGenerator",
+      "group": "config.security.directMessageKey.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.security.privateKey.label",
+      "description": "config.security.privateKey.description"
+    },
+    {
+      "path": "public_key",
+      "web_name": "publicKey",
+      "type": "text",
+      "group": "config.security.directMessageKey.label",
+      "disabled": true,
+      "conditions": [],
+      "label": "config.security.publicKey.label",
+      "description": "config.security.publicKey.description"
+    },
+    {
+      "path": "admin_key.0",
+      "web_name": "adminKey.0",
+      "type": "passwordGenerator",
+      "group": "config.security.adminKeysCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "admin_channel_enabled",
+          "invert": true
+        }
+      ],
+      "label": "config.security.primaryAdminKey.label",
+      "description": "config.security.primaryAdminKey.description"
+    },
+    {
+      "path": "admin_key.1",
+      "web_name": "adminKey.1",
+      "type": "passwordGenerator",
+      "group": "config.security.adminKeysCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "admin_channel_enabled",
+          "invert": true
+        }
+      ],
+      "label": "config.security.secondaryAdminKey.label",
+      "description": "config.security.secondaryAdminKey.description"
+    },
+    {
+      "path": "admin_key.2",
+      "web_name": "adminKey.2",
+      "type": "passwordGenerator",
+      "group": "config.security.adminKeysCard.label",
+      "disabled": false,
+      "conditions": [
+        {
+          "path": "admin_channel_enabled",
+          "invert": true
+        }
+      ],
+      "label": "config.security.tertiaryAdminKey.label",
+      "description": "config.security.tertiaryAdminKey.description"
+    },
+    {
+      "path": "serial_enabled",
+      "web_name": "serialEnabled",
+      "type": "toggle",
+      "group": "config.security.logsCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.security.serialOutputEnabled.label",
+      "description": "config.security.serialOutputEnabled.description"
+    },
+    {
+      "path": "debug_log_api_enabled",
+      "web_name": "debugLogApiEnabled",
+      "type": "toggle",
+      "group": "config.security.logsCard.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.security.enableDebugLogApi.label",
+      "description": "config.security.enableDebugLogApi.description"
+    },
+    {
+      "path": "is_managed",
+      "web_name": "isManaged",
+      "type": "toggle",
+      "group": "config.security.administration.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.security.managed.label",
+      "description": "config.security.managed.description"
+    },
+    {
+      "path": "admin_channel_enabled",
+      "web_name": "adminChannelEnabled",
+      "type": "toggle",
+      "group": "config.security.administration.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.security.adminChannelEnabled.label",
+      "description": "config.security.adminChannelEnabled.description"
+    }
+  ],
+  "user": [
+    {
+      "path": "id",
+      "web_name": "nodeId",
+      "type": "text",
+      "group": "config.user.userConfig.label",
+      "disabled": true,
+      "conditions": [],
+      "label": "config.user.nodeId.label",
+      "description": "config.user.nodeId.description"
+    },
+    {
+      "path": "long_name",
+      "web_name": "longName",
+      "type": "text",
+      "group": "config.user.userConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.user.longName.label",
+      "description": "config.user.longName.description"
+    },
+    {
+      "path": "short_name",
+      "web_name": "shortName",
+      "type": "text",
+      "group": "config.user.userConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.user.shortName.label",
+      "description": "config.user.shortName.description"
+    },
+    {
+      "path": "hw_model",
+      "web_name": "hardwareModel",
+      "type": "text",
+      "group": "config.user.userConfig.label",
+      "disabled": true,
+      "conditions": [],
+      "label": "config.user.hardwareModel.label",
+      "description": "config.user.hardwareModel.description"
+    },
+    {
+      "path": "is_unmessagable",
+      "web_name": "isUnmessageable",
+      "type": "toggle",
+      "group": "config.user.userConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.user.isUnmessageable.label",
+      "description": "config.user.isUnmessageable.description"
+    },
+    {
+      "path": "is_licensed",
+      "web_name": "isLicensed",
+      "type": "toggle",
+      "group": "config.user.userConfig.label",
+      "disabled": false,
+      "conditions": [],
+      "label": "config.user.isLicensed.label",
+      "description": "config.user.isLicensed.description"
+    }
+  ]
+}

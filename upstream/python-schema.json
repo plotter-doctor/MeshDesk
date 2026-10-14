@@ -1,0 +1,3399 @@
+{
+  "channel.0": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "index"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.channel_num"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "settings.psk"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "settings.name"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.id"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.uplink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.downlink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.module_settings.position_precision"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.module_settings.is_muted"
+    },
+    {
+      "choices": [
+        {
+          "label": "DISABLED",
+          "value": 0
+        },
+        {
+          "label": "PRIMARY",
+          "value": 1
+        },
+        {
+          "label": "SECONDARY",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "role"
+    }
+  ],
+  "channel.1": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "index"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.channel_num"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "settings.psk"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "settings.name"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.id"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.uplink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.downlink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.module_settings.position_precision"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.module_settings.is_muted"
+    },
+    {
+      "choices": [
+        {
+          "label": "DISABLED",
+          "value": 0
+        },
+        {
+          "label": "PRIMARY",
+          "value": 1
+        },
+        {
+          "label": "SECONDARY",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "role"
+    }
+  ],
+  "channel.2": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "index"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.channel_num"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "settings.psk"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "settings.name"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.id"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.uplink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.downlink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.module_settings.position_precision"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.module_settings.is_muted"
+    },
+    {
+      "choices": [
+        {
+          "label": "DISABLED",
+          "value": 0
+        },
+        {
+          "label": "PRIMARY",
+          "value": 1
+        },
+        {
+          "label": "SECONDARY",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "role"
+    }
+  ],
+  "channel.3": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "index"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.channel_num"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "settings.psk"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "settings.name"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.id"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.uplink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.downlink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.module_settings.position_precision"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.module_settings.is_muted"
+    },
+    {
+      "choices": [
+        {
+          "label": "DISABLED",
+          "value": 0
+        },
+        {
+          "label": "PRIMARY",
+          "value": 1
+        },
+        {
+          "label": "SECONDARY",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "role"
+    }
+  ],
+  "channel.4": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "index"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.channel_num"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "settings.psk"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "settings.name"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.id"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.uplink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.downlink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.module_settings.position_precision"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.module_settings.is_muted"
+    },
+    {
+      "choices": [
+        {
+          "label": "DISABLED",
+          "value": 0
+        },
+        {
+          "label": "PRIMARY",
+          "value": 1
+        },
+        {
+          "label": "SECONDARY",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "role"
+    }
+  ],
+  "channel.5": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "index"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.channel_num"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "settings.psk"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "settings.name"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.id"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.uplink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.downlink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.module_settings.position_precision"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.module_settings.is_muted"
+    },
+    {
+      "choices": [
+        {
+          "label": "DISABLED",
+          "value": 0
+        },
+        {
+          "label": "PRIMARY",
+          "value": 1
+        },
+        {
+          "label": "SECONDARY",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "role"
+    }
+  ],
+  "channel.6": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "index"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.channel_num"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "settings.psk"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "settings.name"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.id"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.uplink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.downlink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.module_settings.position_precision"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.module_settings.is_muted"
+    },
+    {
+      "choices": [
+        {
+          "label": "DISABLED",
+          "value": 0
+        },
+        {
+          "label": "PRIMARY",
+          "value": 1
+        },
+        {
+          "label": "SECONDARY",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "role"
+    }
+  ],
+  "channel.7": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "index"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.channel_num"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "settings.psk"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "settings.name"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.id"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.uplink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.downlink_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "settings.module_settings.position_precision"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings.module_settings.is_muted"
+    },
+    {
+      "choices": [
+        {
+          "label": "DISABLED",
+          "value": 0
+        },
+        {
+          "label": "PRIMARY",
+          "value": 1
+        },
+        {
+          "label": "SECONDARY",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "role"
+    }
+  ],
+  "config.bluetooth": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [
+        {
+          "label": "RANDOM_PIN",
+          "value": 0
+        },
+        {
+          "label": "FIXED_PIN",
+          "value": 1
+        },
+        {
+          "label": "NO_PIN",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "mode"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "fixed_pin"
+    }
+  ],
+  "config.device": [
+    {
+      "choices": [
+        {
+          "label": "CLIENT",
+          "value": 0
+        },
+        {
+          "label": "CLIENT_MUTE",
+          "value": 1
+        },
+        {
+          "label": "ROUTER",
+          "value": 2
+        },
+        {
+          "label": "ROUTER_CLIENT",
+          "value": 3
+        },
+        {
+          "label": "REPEATER",
+          "value": 4
+        },
+        {
+          "label": "TRACKER",
+          "value": 5
+        },
+        {
+          "label": "SENSOR",
+          "value": 6
+        },
+        {
+          "label": "TAK",
+          "value": 7
+        },
+        {
+          "label": "CLIENT_HIDDEN",
+          "value": 8
+        },
+        {
+          "label": "LOST_AND_FOUND",
+          "value": 9
+        },
+        {
+          "label": "TAK_TRACKER",
+          "value": 10
+        },
+        {
+          "label": "ROUTER_LATE",
+          "value": 11
+        },
+        {
+          "label": "CLIENT_BASE",
+          "value": 12
+        }
+      ],
+      "kind": "enum",
+      "path": "role"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "serial_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "button_gpio"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "buzzer_gpio"
+    },
+    {
+      "choices": [
+        {
+          "label": "ALL",
+          "value": 0
+        },
+        {
+          "label": "ALL_SKIP_DECODING",
+          "value": 1
+        },
+        {
+          "label": "LOCAL_ONLY",
+          "value": 2
+        },
+        {
+          "label": "KNOWN_ONLY",
+          "value": 3
+        },
+        {
+          "label": "NONE",
+          "value": 4
+        },
+        {
+          "label": "CORE_PORTNUMS_ONLY",
+          "value": 5
+        }
+      ],
+      "kind": "enum",
+      "path": "rebroadcast_mode"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "node_info_broadcast_secs"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "double_tap_as_button_press"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "is_managed"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "disable_triple_click"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "tzdef"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "led_heartbeat_disabled"
+    },
+    {
+      "choices": [
+        {
+          "label": "ALL_ENABLED",
+          "value": 0
+        },
+        {
+          "label": "DISABLED",
+          "value": 1
+        },
+        {
+          "label": "NOTIFICATIONS_ONLY",
+          "value": 2
+        },
+        {
+          "label": "SYSTEM_ONLY",
+          "value": 3
+        },
+        {
+          "label": "DIRECT_MSG_ONLY",
+          "value": 4
+        }
+      ],
+      "kind": "enum",
+      "path": "buzzer_mode"
+    }
+  ],
+  "config.device_ui": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "version"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "screen_brightness"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "screen_timeout"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "screen_lock"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "settings_lock"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "pin_code"
+    },
+    {
+      "choices": [
+        {
+          "label": "DARK",
+          "value": 0
+        },
+        {
+          "label": "LIGHT",
+          "value": 1
+        },
+        {
+          "label": "RED",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "theme"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "alert_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "banner_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "ring_tone_id"
+    },
+    {
+      "choices": [
+        {
+          "label": "ENGLISH",
+          "value": 0
+        },
+        {
+          "label": "FRENCH",
+          "value": 1
+        },
+        {
+          "label": "GERMAN",
+          "value": 2
+        },
+        {
+          "label": "ITALIAN",
+          "value": 3
+        },
+        {
+          "label": "PORTUGUESE",
+          "value": 4
+        },
+        {
+          "label": "SPANISH",
+          "value": 5
+        },
+        {
+          "label": "SWEDISH",
+          "value": 6
+        },
+        {
+          "label": "FINNISH",
+          "value": 7
+        },
+        {
+          "label": "POLISH",
+          "value": 8
+        },
+        {
+          "label": "TURKISH",
+          "value": 9
+        },
+        {
+          "label": "SERBIAN",
+          "value": 10
+        },
+        {
+          "label": "RUSSIAN",
+          "value": 11
+        },
+        {
+          "label": "DUTCH",
+          "value": 12
+        },
+        {
+          "label": "GREEK",
+          "value": 13
+        },
+        {
+          "label": "NORWEGIAN",
+          "value": 14
+        },
+        {
+          "label": "SLOVENIAN",
+          "value": 15
+        },
+        {
+          "label": "UKRAINIAN",
+          "value": 16
+        },
+        {
+          "label": "BULGARIAN",
+          "value": 17
+        },
+        {
+          "label": "CZECH",
+          "value": 18
+        },
+        {
+          "label": "DANISH",
+          "value": 19
+        },
+        {
+          "label": "SIMPLIFIED_CHINESE",
+          "value": 30
+        },
+        {
+          "label": "TRADITIONAL_CHINESE",
+          "value": 31
+        }
+      ],
+      "kind": "enum",
+      "path": "language"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "node_filter.unknown_switch"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "node_filter.offline_switch"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "node_filter.public_key_switch"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "node_filter.hops_away"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "node_filter.position_switch"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "node_filter.node_name"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "node_filter.channel"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "node_highlight.chat_switch"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "node_highlight.position_switch"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "node_highlight.telemetry_switch"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "node_highlight.iaq_switch"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "node_highlight.node_name"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "calibration_data"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "map_data.home.zoom"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "map_data.home.latitude"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "map_data.home.longitude"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "map_data.style"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "map_data.follow_gps"
+    },
+    {
+      "choices": [
+        {
+          "label": "DYNAMIC",
+          "value": 0
+        },
+        {
+          "label": "FIXED_RING",
+          "value": 1
+        },
+        {
+          "label": "FREEZE_HEADING",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "compass_mode"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "screen_rgb_color"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "is_clockface_analog"
+    },
+    {
+      "choices": [
+        {
+          "label": "DEC",
+          "value": 0
+        },
+        {
+          "label": "DMS",
+          "value": 1
+        },
+        {
+          "label": "UTM",
+          "value": 2
+        },
+        {
+          "label": "MGRS",
+          "value": 3
+        },
+        {
+          "label": "OLC",
+          "value": 4
+        },
+        {
+          "label": "OSGR",
+          "value": 5
+        },
+        {
+          "label": "MLS",
+          "value": 6
+        }
+      ],
+      "kind": "enum",
+      "path": "gps_format"
+    }
+  ],
+  "config.display": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "screen_on_secs"
+    },
+    {
+      "choices": [
+        {
+          "label": "UNUSED",
+          "value": 0
+        }
+      ],
+      "kind": "enum",
+      "path": "gps_format"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "auto_screen_carousel_secs"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "compass_north_top"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "flip_screen"
+    },
+    {
+      "choices": [
+        {
+          "label": "METRIC",
+          "value": 0
+        },
+        {
+          "label": "IMPERIAL",
+          "value": 1
+        }
+      ],
+      "kind": "enum",
+      "path": "units"
+    },
+    {
+      "choices": [
+        {
+          "label": "OLED_AUTO",
+          "value": 0
+        },
+        {
+          "label": "OLED_SSD1306",
+          "value": 1
+        },
+        {
+          "label": "OLED_SH1106",
+          "value": 2
+        },
+        {
+          "label": "OLED_SH1107",
+          "value": 3
+        },
+        {
+          "label": "OLED_SH1107_128_128",
+          "value": 4
+        },
+        {
+          "label": "OLED_SH1107_ROTATED",
+          "value": 5
+        }
+      ],
+      "kind": "enum",
+      "path": "oled"
+    },
+    {
+      "choices": [
+        {
+          "label": "DEFAULT",
+          "value": 0
+        },
+        {
+          "label": "TWOCOLOR",
+          "value": 1
+        },
+        {
+          "label": "INVERTED",
+          "value": 2
+        },
+        {
+          "label": "COLOR",
+          "value": 3
+        }
+      ],
+      "kind": "enum",
+      "path": "displaymode"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "heading_bold"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "wake_on_tap_or_motion"
+    },
+    {
+      "choices": [
+        {
+          "label": "DEGREES_0",
+          "value": 0
+        },
+        {
+          "label": "DEGREES_90",
+          "value": 1
+        },
+        {
+          "label": "DEGREES_180",
+          "value": 2
+        },
+        {
+          "label": "DEGREES_270",
+          "value": 3
+        },
+        {
+          "label": "DEGREES_0_INVERTED",
+          "value": 4
+        },
+        {
+          "label": "DEGREES_90_INVERTED",
+          "value": 5
+        },
+        {
+          "label": "DEGREES_180_INVERTED",
+          "value": 6
+        },
+        {
+          "label": "DEGREES_270_INVERTED",
+          "value": 7
+        }
+      ],
+      "kind": "enum",
+      "path": "compass_orientation"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "use_12h_clock"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "use_long_node_name"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enable_message_bubbles"
+    }
+  ],
+  "config.lora": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "use_preset"
+    },
+    {
+      "choices": [
+        {
+          "label": "LONG_FAST",
+          "value": 0
+        },
+        {
+          "label": "LONG_SLOW",
+          "value": 1
+        },
+        {
+          "label": "VERY_LONG_SLOW",
+          "value": 2
+        },
+        {
+          "label": "MEDIUM_SLOW",
+          "value": 3
+        },
+        {
+          "label": "MEDIUM_FAST",
+          "value": 4
+        },
+        {
+          "label": "SHORT_SLOW",
+          "value": 5
+        },
+        {
+          "label": "SHORT_FAST",
+          "value": 6
+        },
+        {
+          "label": "LONG_MODERATE",
+          "value": 7
+        },
+        {
+          "label": "SHORT_TURBO",
+          "value": 8
+        },
+        {
+          "label": "LONG_TURBO",
+          "value": 9
+        },
+        {
+          "label": "LITE_FAST",
+          "value": 10
+        },
+        {
+          "label": "LITE_SLOW",
+          "value": 11
+        },
+        {
+          "label": "NARROW_FAST",
+          "value": 12
+        },
+        {
+          "label": "NARROW_SLOW",
+          "value": 13
+        }
+      ],
+      "kind": "enum",
+      "path": "modem_preset"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "bandwidth"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "spread_factor"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "coding_rate"
+    },
+    {
+      "choices": [],
+      "kind": "number",
+      "path": "frequency_offset"
+    },
+    {
+      "choices": [
+        {
+          "label": "UNSET",
+          "value": 0
+        },
+        {
+          "label": "US",
+          "value": 1
+        },
+        {
+          "label": "EU_433",
+          "value": 2
+        },
+        {
+          "label": "EU_868",
+          "value": 3
+        },
+        {
+          "label": "CN",
+          "value": 4
+        },
+        {
+          "label": "JP",
+          "value": 5
+        },
+        {
+          "label": "ANZ",
+          "value": 6
+        },
+        {
+          "label": "KR",
+          "value": 7
+        },
+        {
+          "label": "TW",
+          "value": 8
+        },
+        {
+          "label": "RU",
+          "value": 9
+        },
+        {
+          "label": "IN",
+          "value": 10
+        },
+        {
+          "label": "NZ_865",
+          "value": 11
+        },
+        {
+          "label": "TH",
+          "value": 12
+        },
+        {
+          "label": "LORA_24",
+          "value": 13
+        },
+        {
+          "label": "UA_433",
+          "value": 14
+        },
+        {
+          "label": "UA_868",
+          "value": 15
+        },
+        {
+          "label": "MY_433",
+          "value": 16
+        },
+        {
+          "label": "MY_919",
+          "value": 17
+        },
+        {
+          "label": "SG_923",
+          "value": 18
+        },
+        {
+          "label": "PH_433",
+          "value": 19
+        },
+        {
+          "label": "PH_868",
+          "value": 20
+        },
+        {
+          "label": "PH_915",
+          "value": 21
+        },
+        {
+          "label": "ANZ_433",
+          "value": 22
+        },
+        {
+          "label": "KZ_433",
+          "value": 23
+        },
+        {
+          "label": "KZ_863",
+          "value": 24
+        },
+        {
+          "label": "NP_865",
+          "value": 25
+        },
+        {
+          "label": "BR_902",
+          "value": 26
+        },
+        {
+          "label": "ITU1_2M",
+          "value": 27
+        },
+        {
+          "label": "ITU2_2M",
+          "value": 28
+        },
+        {
+          "label": "EU_866",
+          "value": 29
+        },
+        {
+          "label": "EU_874",
+          "value": 30
+        },
+        {
+          "label": "EU_917",
+          "value": 31
+        },
+        {
+          "label": "EU_N_868",
+          "value": 32
+        },
+        {
+          "label": "ITU3_2M",
+          "value": 33
+        }
+      ],
+      "kind": "enum",
+      "path": "region"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "hop_limit"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "tx_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "tx_power"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "channel_num"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "override_duty_cycle"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "sx126x_rx_boosted_gain"
+    },
+    {
+      "choices": [],
+      "kind": "number",
+      "path": "override_frequency"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "pa_fan_disabled"
+    },
+    {
+      "choices": [],
+      "kind": "json",
+      "path": "ignore_incoming"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "ignore_mqtt"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "config_ok_to_mqtt"
+    },
+    {
+      "choices": [
+        {
+          "label": "DISABLED",
+          "value": 0
+        },
+        {
+          "label": "ENABLED",
+          "value": 1
+        },
+        {
+          "label": "NOT_PRESENT",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "fem_lna_mode"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "serial_hal_only"
+    }
+  ],
+  "config.network": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "wifi_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "wifi_ssid"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "wifi_psk"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "ntp_server"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "eth_enabled"
+    },
+    {
+      "choices": [
+        {
+          "label": "DHCP",
+          "value": 0
+        },
+        {
+          "label": "STATIC",
+          "value": 1
+        }
+      ],
+      "kind": "enum",
+      "path": "address_mode"
+    },
+    {
+      "choices": [],
+      "kind": "ip",
+      "path": "ipv4_config.ip"
+    },
+    {
+      "choices": [],
+      "kind": "ip",
+      "path": "ipv4_config.gateway"
+    },
+    {
+      "choices": [],
+      "kind": "ip",
+      "path": "ipv4_config.subnet"
+    },
+    {
+      "choices": [],
+      "kind": "ip",
+      "path": "ipv4_config.dns"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "rsyslog_server"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "enabled_protocols"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "ipv6_enabled"
+    }
+  ],
+  "config.position": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "position_broadcast_secs"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "position_broadcast_smart_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "fixed_position"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "gps_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "gps_update_interval"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "gps_attempt_time"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "position_flags"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "rx_gpio"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "tx_gpio"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "broadcast_smart_minimum_distance"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "broadcast_smart_minimum_interval_secs"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "gps_en_gpio"
+    },
+    {
+      "choices": [
+        {
+          "label": "DISABLED",
+          "value": 0
+        },
+        {
+          "label": "ENABLED",
+          "value": 1
+        },
+        {
+          "label": "NOT_PRESENT",
+          "value": 2
+        }
+      ],
+      "kind": "enum",
+      "path": "gps_mode"
+    }
+  ],
+  "config.power": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "is_power_saving"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "on_battery_shutdown_after_secs"
+    },
+    {
+      "choices": [],
+      "kind": "number",
+      "path": "adc_multiplier_override"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "wait_bluetooth_secs"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "sds_secs"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "ls_secs"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "min_wake_secs"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "device_battery_ina_address"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "powermon_enables"
+    }
+  ],
+  "config.security": [
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "public_key"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "private_key"
+    },
+    {
+      "choices": [],
+      "kind": "json",
+      "path": "admin_key"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "is_managed"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "serial_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "debug_log_api_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "admin_channel_enabled"
+    }
+  ],
+  "module.ambient_lighting": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "led_state"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "current"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "red"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "green"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "blue"
+    }
+  ],
+  "module.audio": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "codec2_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "ptt_pin"
+    },
+    {
+      "choices": [
+        {
+          "label": "CODEC2_DEFAULT",
+          "value": 0
+        },
+        {
+          "label": "CODEC2_3200",
+          "value": 1
+        },
+        {
+          "label": "CODEC2_2400",
+          "value": 2
+        },
+        {
+          "label": "CODEC2_1600",
+          "value": 3
+        },
+        {
+          "label": "CODEC2_1400",
+          "value": 4
+        },
+        {
+          "label": "CODEC2_1300",
+          "value": 5
+        },
+        {
+          "label": "CODEC2_1200",
+          "value": 6
+        },
+        {
+          "label": "CODEC2_700",
+          "value": 7
+        },
+        {
+          "label": "CODEC2_700B",
+          "value": 8
+        }
+      ],
+      "kind": "enum",
+      "path": "bitrate"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "i2s_ws"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "i2s_sd"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "i2s_din"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "i2s_sck"
+    }
+  ],
+  "module.canned_message": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "rotary1_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "inputbroker_pin_a"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "inputbroker_pin_b"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "inputbroker_pin_press"
+    },
+    {
+      "choices": [
+        {
+          "label": "NONE",
+          "value": 0
+        },
+        {
+          "label": "UP",
+          "value": 17
+        },
+        {
+          "label": "DOWN",
+          "value": 18
+        },
+        {
+          "label": "LEFT",
+          "value": 19
+        },
+        {
+          "label": "RIGHT",
+          "value": 20
+        },
+        {
+          "label": "SELECT",
+          "value": 10
+        },
+        {
+          "label": "BACK",
+          "value": 27
+        },
+        {
+          "label": "CANCEL",
+          "value": 24
+        }
+      ],
+      "kind": "enum",
+      "path": "inputbroker_event_cw"
+    },
+    {
+      "choices": [
+        {
+          "label": "NONE",
+          "value": 0
+        },
+        {
+          "label": "UP",
+          "value": 17
+        },
+        {
+          "label": "DOWN",
+          "value": 18
+        },
+        {
+          "label": "LEFT",
+          "value": 19
+        },
+        {
+          "label": "RIGHT",
+          "value": 20
+        },
+        {
+          "label": "SELECT",
+          "value": 10
+        },
+        {
+          "label": "BACK",
+          "value": 27
+        },
+        {
+          "label": "CANCEL",
+          "value": 24
+        }
+      ],
+      "kind": "enum",
+      "path": "inputbroker_event_ccw"
+    },
+    {
+      "choices": [
+        {
+          "label": "NONE",
+          "value": 0
+        },
+        {
+          "label": "UP",
+          "value": 17
+        },
+        {
+          "label": "DOWN",
+          "value": 18
+        },
+        {
+          "label": "LEFT",
+          "value": 19
+        },
+        {
+          "label": "RIGHT",
+          "value": 20
+        },
+        {
+          "label": "SELECT",
+          "value": 10
+        },
+        {
+          "label": "BACK",
+          "value": 27
+        },
+        {
+          "label": "CANCEL",
+          "value": 24
+        }
+      ],
+      "kind": "enum",
+      "path": "inputbroker_event_press"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "updown1_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "allow_input_source"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "send_bell"
+    }
+  ],
+  "module.detection_sensor": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "minimum_broadcast_secs"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "state_broadcast_secs"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "send_bell"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "name"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "monitor_pin"
+    },
+    {
+      "choices": [
+        {
+          "label": "LOGIC_LOW",
+          "value": 0
+        },
+        {
+          "label": "LOGIC_HIGH",
+          "value": 1
+        },
+        {
+          "label": "FALLING_EDGE",
+          "value": 2
+        },
+        {
+          "label": "RISING_EDGE",
+          "value": 3
+        },
+        {
+          "label": "EITHER_EDGE_ACTIVE_LOW",
+          "value": 4
+        },
+        {
+          "label": "EITHER_EDGE_ACTIVE_HIGH",
+          "value": 5
+        }
+      ],
+      "kind": "enum",
+      "path": "detection_trigger_type"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "use_pullup"
+    }
+  ],
+  "module.external_notification": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "output_ms"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "output"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "output_vibra"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "output_buzzer"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "active"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "alert_message"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "alert_message_vibra"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "alert_message_buzzer"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "alert_bell"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "alert_bell_vibra"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "alert_bell_buzzer"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "use_pwm"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "nag_timeout"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "use_i2s_as_buzzer"
+    }
+  ],
+  "module.mqtt": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "address"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "username"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "password"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "encryption_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "json_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "tls_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "root"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "proxy_to_client_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "map_reporting_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "map_report_settings.publish_interval_secs"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "map_report_settings.position_precision"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "map_report_settings.should_report_location"
+    }
+  ],
+  "module.neighbor_info": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "update_interval"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "transmit_over_lora"
+    }
+  ],
+  "module.paxcounter": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "paxcounter_update_interval"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "wifi_threshold"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "ble_threshold"
+    }
+  ],
+  "module.range_test": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "sender"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "save"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "clear_on_reboot"
+    }
+  ],
+  "module.remote_hardware": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "allow_undefined_pin_access"
+    },
+    {
+      "choices": [],
+      "kind": "json",
+      "path": "available_pins"
+    }
+  ],
+  "module.serial": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "echo"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "rxd"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "txd"
+    },
+    {
+      "choices": [
+        {
+          "label": "BAUD_DEFAULT",
+          "value": 0
+        },
+        {
+          "label": "BAUD_110",
+          "value": 1
+        },
+        {
+          "label": "BAUD_300",
+          "value": 2
+        },
+        {
+          "label": "BAUD_600",
+          "value": 3
+        },
+        {
+          "label": "BAUD_1200",
+          "value": 4
+        },
+        {
+          "label": "BAUD_2400",
+          "value": 5
+        },
+        {
+          "label": "BAUD_4800",
+          "value": 6
+        },
+        {
+          "label": "BAUD_9600",
+          "value": 7
+        },
+        {
+          "label": "BAUD_19200",
+          "value": 8
+        },
+        {
+          "label": "BAUD_38400",
+          "value": 9
+        },
+        {
+          "label": "BAUD_57600",
+          "value": 10
+        },
+        {
+          "label": "BAUD_115200",
+          "value": 11
+        },
+        {
+          "label": "BAUD_230400",
+          "value": 12
+        },
+        {
+          "label": "BAUD_460800",
+          "value": 13
+        },
+        {
+          "label": "BAUD_576000",
+          "value": 14
+        },
+        {
+          "label": "BAUD_921600",
+          "value": 15
+        }
+      ],
+      "kind": "enum",
+      "path": "baud"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "timeout"
+    },
+    {
+      "choices": [
+        {
+          "label": "DEFAULT",
+          "value": 0
+        },
+        {
+          "label": "SIMPLE",
+          "value": 1
+        },
+        {
+          "label": "PROTO",
+          "value": 2
+        },
+        {
+          "label": "TEXTMSG",
+          "value": 3
+        },
+        {
+          "label": "NMEA",
+          "value": 4
+        },
+        {
+          "label": "CALTOPO",
+          "value": 5
+        },
+        {
+          "label": "WS85",
+          "value": 6
+        },
+        {
+          "label": "VE_DIRECT",
+          "value": 7
+        },
+        {
+          "label": "MS_CONFIG",
+          "value": 8
+        },
+        {
+          "label": "LOG",
+          "value": 9
+        },
+        {
+          "label": "LOGTEXT",
+          "value": 10
+        }
+      ],
+      "kind": "enum",
+      "path": "mode"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "override_console_serial_port"
+    }
+  ],
+  "module.statusmessage": [
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "node_status"
+    }
+  ],
+  "module.store_forward": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "heartbeat"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "records"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "history_return_max"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "history_return_window"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "is_server"
+    }
+  ],
+  "module.tak": [
+    {
+      "choices": [
+        {
+          "label": "Unspecifed_Color",
+          "value": 0
+        },
+        {
+          "label": "White",
+          "value": 1
+        },
+        {
+          "label": "Yellow",
+          "value": 2
+        },
+        {
+          "label": "Orange",
+          "value": 3
+        },
+        {
+          "label": "Magenta",
+          "value": 4
+        },
+        {
+          "label": "Red",
+          "value": 5
+        },
+        {
+          "label": "Maroon",
+          "value": 6
+        },
+        {
+          "label": "Purple",
+          "value": 7
+        },
+        {
+          "label": "Dark_Blue",
+          "value": 8
+        },
+        {
+          "label": "Blue",
+          "value": 9
+        },
+        {
+          "label": "Cyan",
+          "value": 10
+        },
+        {
+          "label": "Teal",
+          "value": 11
+        },
+        {
+          "label": "Green",
+          "value": 12
+        },
+        {
+          "label": "Dark_Green",
+          "value": 13
+        },
+        {
+          "label": "Brown",
+          "value": 14
+        }
+      ],
+      "kind": "enum",
+      "path": "team"
+    },
+    {
+      "choices": [
+        {
+          "label": "Unspecifed",
+          "value": 0
+        },
+        {
+          "label": "TeamMember",
+          "value": 1
+        },
+        {
+          "label": "TeamLead",
+          "value": 2
+        },
+        {
+          "label": "HQ",
+          "value": 3
+        },
+        {
+          "label": "Sniper",
+          "value": 4
+        },
+        {
+          "label": "Medic",
+          "value": 5
+        },
+        {
+          "label": "ForwardObserver",
+          "value": 6
+        },
+        {
+          "label": "RTO",
+          "value": 7
+        },
+        {
+          "label": "K9",
+          "value": 8
+        }
+      ],
+      "kind": "enum",
+      "path": "role"
+    }
+  ],
+  "module.telemetry": [
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "device_update_interval"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "environment_update_interval"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "environment_measurement_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "environment_screen_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "environment_display_fahrenheit"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "air_quality_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "air_quality_interval"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "power_measurement_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "power_update_interval"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "power_screen_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "health_measurement_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "health_update_interval"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "health_screen_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "device_telemetry_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "air_quality_screen_enabled"
+    }
+  ],
+  "module.traffic_management": [
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "enabled"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "position_dedup_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "position_precision_bits"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "position_min_interval_secs"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "nodeinfo_direct_response"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "nodeinfo_direct_response_max_hops"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "rate_limit_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "rate_limit_window_secs"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "rate_limit_max_packets"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "drop_unknown_enabled"
+    },
+    {
+      "choices": [],
+      "kind": "integer",
+      "path": "unknown_packet_threshold"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "exhaust_hop_telemetry"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "exhaust_hop_position"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "router_preserve_hops"
+    }
+  ],
+  "user": [
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "id"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "long_name"
+    },
+    {
+      "choices": [],
+      "kind": "text",
+      "path": "short_name"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "macaddr"
+    },
+    {
+      "choices": [
+        {
+          "label": "UNSET",
+          "value": 0
+        },
+        {
+          "label": "TLORA_V2",
+          "value": 1
+        },
+        {
+          "label": "TLORA_V1",
+          "value": 2
+        },
+        {
+          "label": "TLORA_V2_1_1P6",
+          "value": 3
+        },
+        {
+          "label": "TBEAM",
+          "value": 4
+        },
+        {
+          "label": "HELTEC_V2_0",
+          "value": 5
+        },
+        {
+          "label": "TBEAM_V0P7",
+          "value": 6
+        },
+        {
+          "label": "T_ECHO",
+          "value": 7
+        },
+        {
+          "label": "TLORA_V1_1P3",
+          "value": 8
+        },
+        {
+          "label": "RAK4631",
+          "value": 9
+        },
+        {
+          "label": "HELTEC_V2_1",
+          "value": 10
+        },
+        {
+          "label": "HELTEC_V1",
+          "value": 11
+        },
+        {
+          "label": "LILYGO_TBEAM_S3_CORE",
+          "value": 12
+        },
+        {
+          "label": "RAK11200",
+          "value": 13
+        },
+        {
+          "label": "NANO_G1",
+          "value": 14
+        },
+        {
+          "label": "TLORA_V2_1_1P8",
+          "value": 15
+        },
+        {
+          "label": "TLORA_T3_S3",
+          "value": 16
+        },
+        {
+          "label": "NANO_G1_EXPLORER",
+          "value": 17
+        },
+        {
+          "label": "NANO_G2_ULTRA",
+          "value": 18
+        },
+        {
+          "label": "LORA_TYPE",
+          "value": 19
+        },
+        {
+          "label": "WIPHONE",
+          "value": 20
+        },
+        {
+          "label": "WIO_WM1110",
+          "value": 21
+        },
+        {
+          "label": "RAK2560",
+          "value": 22
+        },
+        {
+          "label": "HELTEC_HRU_3601",
+          "value": 23
+        },
+        {
+          "label": "HELTEC_WIRELESS_BRIDGE",
+          "value": 24
+        },
+        {
+          "label": "STATION_G1",
+          "value": 25
+        },
+        {
+          "label": "RAK11310",
+          "value": 26
+        },
+        {
+          "label": "SENSELORA_RP2040",
+          "value": 27
+        },
+        {
+          "label": "SENSELORA_S3",
+          "value": 28
+        },
+        {
+          "label": "CANARYONE",
+          "value": 29
+        },
+        {
+          "label": "RP2040_LORA",
+          "value": 30
+        },
+        {
+          "label": "STATION_G2",
+          "value": 31
+        },
+        {
+          "label": "LORA_RELAY_V1",
+          "value": 32
+        },
+        {
+          "label": "T_ECHO_PLUS",
+          "value": 33
+        },
+        {
+          "label": "PPR",
+          "value": 34
+        },
+        {
+          "label": "GENIEBLOCKS",
+          "value": 35
+        },
+        {
+          "label": "NRF52_UNKNOWN",
+          "value": 36
+        },
+        {
+          "label": "PORTDUINO",
+          "value": 37
+        },
+        {
+          "label": "ANDROID_SIM",
+          "value": 38
+        },
+        {
+          "label": "DIY_V1",
+          "value": 39
+        },
+        {
+          "label": "NRF52840_PCA10059",
+          "value": 40
+        },
+        {
+          "label": "DR_DEV",
+          "value": 41
+        },
+        {
+          "label": "M5STACK",
+          "value": 42
+        },
+        {
+          "label": "HELTEC_V3",
+          "value": 43
+        },
+        {
+          "label": "HELTEC_WSL_V3",
+          "value": 44
+        },
+        {
+          "label": "BETAFPV_2400_TX",
+          "value": 45
+        },
+        {
+          "label": "BETAFPV_900_NANO_TX",
+          "value": 46
+        },
+        {
+          "label": "RPI_PICO",
+          "value": 47
+        },
+        {
+          "label": "HELTEC_WIRELESS_TRACKER",
+          "value": 48
+        },
+        {
+          "label": "HELTEC_WIRELESS_PAPER",
+          "value": 49
+        },
+        {
+          "label": "T_DECK",
+          "value": 50
+        },
+        {
+          "label": "T_WATCH_S3",
+          "value": 51
+        },
+        {
+          "label": "PICOMPUTER_S3",
+          "value": 52
+        },
+        {
+          "label": "HELTEC_HT62",
+          "value": 53
+        },
+        {
+          "label": "EBYTE_ESP32_S3",
+          "value": 54
+        },
+        {
+          "label": "ESP32_S3_PICO",
+          "value": 55
+        },
+        {
+          "label": "CHATTER_2",
+          "value": 56
+        },
+        {
+          "label": "HELTEC_WIRELESS_PAPER_V1_0",
+          "value": 57
+        },
+        {
+          "label": "HELTEC_WIRELESS_TRACKER_V1_0",
+          "value": 58
+        },
+        {
+          "label": "UNPHONE",
+          "value": 59
+        },
+        {
+          "label": "TD_LORAC",
+          "value": 60
+        },
+        {
+          "label": "CDEBYTE_EORA_S3",
+          "value": 61
+        },
+        {
+          "label": "TWC_MESH_V4",
+          "value": 62
+        },
+        {
+          "label": "NRF52_PROMICRO_DIY",
+          "value": 63
+        },
+        {
+          "label": "RADIOMASTER_900_BANDIT_NANO",
+          "value": 64
+        },
+        {
+          "label": "HELTEC_CAPSULE_SENSOR_V3",
+          "value": 65
+        },
+        {
+          "label": "HELTEC_VISION_MASTER_T190",
+          "value": 66
+        },
+        {
+          "label": "HELTEC_VISION_MASTER_E213",
+          "value": 67
+        },
+        {
+          "label": "HELTEC_VISION_MASTER_E290",
+          "value": 68
+        },
+        {
+          "label": "HELTEC_MESH_NODE_T114",
+          "value": 69
+        },
+        {
+          "label": "SENSECAP_INDICATOR",
+          "value": 70
+        },
+        {
+          "label": "TRACKER_T1000_E",
+          "value": 71
+        },
+        {
+          "label": "RAK3172",
+          "value": 72
+        },
+        {
+          "label": "WIO_E5",
+          "value": 73
+        },
+        {
+          "label": "RADIOMASTER_900_BANDIT",
+          "value": 74
+        },
+        {
+          "label": "ME25LS01_4Y10TD",
+          "value": 75
+        },
+        {
+          "label": "RP2040_FEATHER_RFM95",
+          "value": 76
+        },
+        {
+          "label": "M5STACK_COREBASIC",
+          "value": 77
+        },
+        {
+          "label": "M5STACK_CORE2",
+          "value": 78
+        },
+        {
+          "label": "RPI_PICO2",
+          "value": 79
+        },
+        {
+          "label": "M5STACK_CORES3",
+          "value": 80
+        },
+        {
+          "label": "SEEED_XIAO_S3",
+          "value": 81
+        },
+        {
+          "label": "MS24SF1",
+          "value": 82
+        },
+        {
+          "label": "TLORA_C6",
+          "value": 83
+        },
+        {
+          "label": "WISMESH_TAP",
+          "value": 84
+        },
+        {
+          "label": "ROUTASTIC",
+          "value": 85
+        },
+        {
+          "label": "MESH_TAB",
+          "value": 86
+        },
+        {
+          "label": "MESHLINK",
+          "value": 87
+        },
+        {
+          "label": "XIAO_NRF52_KIT",
+          "value": 88
+        },
+        {
+          "label": "THINKNODE_M1",
+          "value": 89
+        },
+        {
+          "label": "THINKNODE_M2",
+          "value": 90
+        },
+        {
+          "label": "T_ETH_ELITE",
+          "value": 91
+        },
+        {
+          "label": "HELTEC_SENSOR_HUB",
+          "value": 92
+        },
+        {
+          "label": "MUZI_BASE",
+          "value": 93
+        },
+        {
+          "label": "HELTEC_MESH_POCKET",
+          "value": 94
+        },
+        {
+          "label": "SEEED_SOLAR_NODE",
+          "value": 95
+        },
+        {
+          "label": "NOMADSTAR_METEOR_PRO",
+          "value": 96
+        },
+        {
+          "label": "CROWPANEL",
+          "value": 97
+        },
+        {
+          "label": "LINK_32",
+          "value": 98
+        },
+        {
+          "label": "SEEED_WIO_TRACKER_L1",
+          "value": 99
+        },
+        {
+          "label": "SEEED_WIO_TRACKER_L1_EINK",
+          "value": 100
+        },
+        {
+          "label": "MUZI_R1_NEO",
+          "value": 101
+        },
+        {
+          "label": "T_DECK_PRO",
+          "value": 102
+        },
+        {
+          "label": "T_LORA_PAGER",
+          "value": 103
+        },
+        {
+          "label": "M5STACK_RESERVED",
+          "value": 104
+        },
+        {
+          "label": "WISMESH_TAG",
+          "value": 105
+        },
+        {
+          "label": "RAK3312",
+          "value": 106
+        },
+        {
+          "label": "THINKNODE_M5",
+          "value": 107
+        },
+        {
+          "label": "HELTEC_MESH_SOLAR",
+          "value": 108
+        },
+        {
+          "label": "T_ECHO_LITE",
+          "value": 109
+        },
+        {
+          "label": "HELTEC_V4",
+          "value": 110
+        },
+        {
+          "label": "M5STACK_C6L",
+          "value": 111
+        },
+        {
+          "label": "M5STACK_CARDPUTER_ADV",
+          "value": 112
+        },
+        {
+          "label": "HELTEC_WIRELESS_TRACKER_V2",
+          "value": 113
+        },
+        {
+          "label": "T_WATCH_ULTRA",
+          "value": 114
+        },
+        {
+          "label": "THINKNODE_M3",
+          "value": 115
+        },
+        {
+          "label": "WISMESH_TAP_V2",
+          "value": 116
+        },
+        {
+          "label": "RAK3401",
+          "value": 117
+        },
+        {
+          "label": "RAK6421",
+          "value": 118
+        },
+        {
+          "label": "THINKNODE_M4",
+          "value": 119
+        },
+        {
+          "label": "THINKNODE_M6",
+          "value": 120
+        },
+        {
+          "label": "MESHSTICK_1262",
+          "value": 121
+        },
+        {
+          "label": "TBEAM_1_WATT",
+          "value": 122
+        },
+        {
+          "label": "T5_S3_EPAPER_PRO",
+          "value": 123
+        },
+        {
+          "label": "TBEAM_BPF",
+          "value": 124
+        },
+        {
+          "label": "MINI_EPAPER_S3",
+          "value": 125
+        },
+        {
+          "label": "TDISPLAY_S3_PRO",
+          "value": 126
+        },
+        {
+          "label": "HELTEC_MESH_NODE_T096",
+          "value": 127
+        },
+        {
+          "label": "TRACKER_T1000_E_PRO",
+          "value": 128
+        },
+        {
+          "label": "THINKNODE_M7",
+          "value": 129
+        },
+        {
+          "label": "THINKNODE_M8",
+          "value": 130
+        },
+        {
+          "label": "THINKNODE_M9",
+          "value": 131
+        },
+        {
+          "label": "HELTEC_V4_R8",
+          "value": 132
+        },
+        {
+          "label": "HELTEC_MESH_NODE_T1",
+          "value": 133
+        },
+        {
+          "label": "STATION_G3",
+          "value": 134
+        },
+        {
+          "label": "T_IMPULSE_PLUS",
+          "value": 135
+        },
+        {
+          "label": "T_ECHO_CARD",
+          "value": 136
+        },
+        {
+          "label": "SEEED_WIO_TRACKER_L2",
+          "value": 137
+        },
+        {
+          "label": "CROWPANEL_P4",
+          "value": 138
+        },
+        {
+          "label": "HELTEC_MESH_TOWER_V2",
+          "value": 139
+        },
+        {
+          "label": "MESHNOLOGY_W10",
+          "value": 140
+        },
+        {
+          "label": "PRIVATE_HW",
+          "value": 255
+        }
+      ],
+      "kind": "enum",
+      "path": "hw_model"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "is_licensed"
+    },
+    {
+      "choices": [
+        {
+          "label": "CLIENT",
+          "value": 0
+        },
+        {
+          "label": "CLIENT_MUTE",
+          "value": 1
+        },
+        {
+          "label": "ROUTER",
+          "value": 2
+        },
+        {
+          "label": "ROUTER_CLIENT",
+          "value": 3
+        },
+        {
+          "label": "REPEATER",
+          "value": 4
+        },
+        {
+          "label": "TRACKER",
+          "value": 5
+        },
+        {
+          "label": "SENSOR",
+          "value": 6
+        },
+        {
+          "label": "TAK",
+          "value": 7
+        },
+        {
+          "label": "CLIENT_HIDDEN",
+          "value": 8
+        },
+        {
+          "label": "LOST_AND_FOUND",
+          "value": 9
+        },
+        {
+          "label": "TAK_TRACKER",
+          "value": 10
+        },
+        {
+          "label": "ROUTER_LATE",
+          "value": 11
+        },
+        {
+          "label": "CLIENT_BASE",
+          "value": 12
+        }
+      ],
+      "kind": "enum",
+      "path": "role"
+    },
+    {
+      "choices": [],
+      "kind": "bytes",
+      "path": "public_key"
+    },
+    {
+      "choices": [],
+      "kind": "bool",
+      "path": "is_unmessagable"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "web": {"repository": "meshtastic/web", "tag": "v2.7.2", "commit": "ee5243a2059126ecd799927d21e052b5f5745974"},
+  "python": {"repository": "meshtastic/python", "tag": "2.7.11"},
+  "policy": "Only stable official releases. Update after reviewing source and schema diffs and passing compatibility tests."
+}

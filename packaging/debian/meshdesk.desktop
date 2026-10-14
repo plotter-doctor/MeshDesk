@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=MeshDesk
+Comment=Meshtastic messages, nodes and radio settings
+Exec=meshdesk
+Icon=meshdesk
+Terminal=false
+Categories=Network;HamRadio;
+StartupWMClass=MeshDesk
+Keywords=Meshtastic;LoRa;Radio;Mesh;
