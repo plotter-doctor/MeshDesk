@@ -52,6 +52,7 @@ def main():
             .not_valid_after(datetime.now(timezone.utc) + timedelta(days=1))
             .add_extension(x509.BasicConstraints(ca=True, path_length=None), critical=True)
             .add_extension(x509.SubjectAlternativeName([
+                x509.DNSName('localhost'),
                 x509.IPAddress(ipaddress.ip_address('127.0.0.1'))]), critical=False)
             .sign(key, hashes.SHA256()))
     pem = cert.public_bytes(serialization.Encoding.PEM)
@@ -85,14 +86,18 @@ def main():
         server.socket = context.wrap_socket(server.socket, server_side=True)
         thread = threading.Thread(target=server.serve_forever, daemon=True)
         thread.start()
-        manager = QtNetwork.QNetworkAccessManager()
-
         def request(trusted):
+            # Each trust policy needs its own connection pool: Qt may reuse a
+            # connection's original SSL configuration for the same endpoint.
+            manager = QtNetwork.QNetworkAccessManager()
             request = QtNetwork.QNetworkRequest(QtCore.QUrl(f'https://127.0.0.1:{server.server_port}/tile.png'))
+            request.setPeerVerifyName('localhost')
             configuration = QtNetwork.QSslConfiguration.defaultConfiguration()
             configuration.setCaCertificates([QtNetwork.QSslCertificate(pem)] if trusted else [])
             request.setSslConfiguration(configuration)
             reply = manager.get(request)
+            ssl_errors = []
+            reply.sslErrors.connect(lambda errors: ssl_errors.extend(e.errorString() for e in errors))
             loop = QtCore.QEventLoop()
             timer = QtCore.QTimer()
             timer.setSingleShot(True)
@@ -101,7 +106,7 @@ def main():
             timer.start(15000)
             loop.exec_()
             assert reply.isFinished(), 'TLS request timed out'
-            result = reply.error(), bytes(reply.readAll()), reply.errorString()
+            result = reply.error(), bytes(reply.readAll()), (reply.errorString(), ssl_errors)
             reply.deleteLater()
             app.processEvents()
             return result
