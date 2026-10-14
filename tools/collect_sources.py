@@ -71,6 +71,8 @@ def main():
         raise ValueError('Review source packaging for this Python version')
     manifest.append(download(f'https://www.python.org/ftp/python/{python_version}/Python-{python_version}.tar.xz',
                              sources / f'Python-{python_version}.tar.xz'))
+    manifest.append(download('https://codeload.github.com/openssl/openssl/tar.gz/refs/tags/OpenSSL_1_1_1b',
+                             sources / 'openssl-1.1.1b-source.tar.gz'))
     # PyQt5-Qt5 is a binary-only PyPI package. Bundle the matching complete Qt
     # source separately so its size does not obscure the small application kit.
     qt = next(release for name, release in required if name == 'pyqt5-qt5')
