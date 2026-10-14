@@ -11,7 +11,7 @@ from meshdesk.mapview import MeshMap,QRProvider
 from meshdesk.store import Store
 from meshdesk.simulator import LOCAL,PEER
 from test_gui_layout import audit
-from conftest import wait_for
+from conftest import wait_for,prepare_layout_window
 
 
 def test_populated_chat_transport_forms_and_advanced_settings(qtapp,tmp_path):
@@ -24,6 +24,7 @@ def test_populated_chat_transport_forms_and_advanced_settings(qtapp,tmp_path):
     reports=[];problems=[]
     try:
         root=engine.rootObjects()[0];wait_for(qtapp,lambda:json.loads(c.stateJson).get('connected'))
+        prepare_layout_window(root)
         peer=next(n for n in c.store.nodes(c.active) if n['num']==PEER)
         peer['user']['longName']='Long radio name beside the river 123456';c.store.node(c.active,peer)
         for i in range(3):

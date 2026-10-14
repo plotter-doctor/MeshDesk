@@ -28,9 +28,6 @@ jobs:
         run: python -m pip install -c requirements-linux.lock -e '.[desktop,test]' wheel
       - if: runner.os != 'Linux'
         run: python -m pip install -e '.[desktop,test]' wheel
-      - name: Enlarge Windows runner desktop for the portrait GUI audit
-        if: runner.os == 'Windows'
-        run: Set-DisplayResolution -Width 1920 -Height 1200 -Force
       - run: python tools/audit_compatibility.py
       - if: runner.os == 'Linux'
         run: xvfb-run -a python -m pytest -v -s --cov --cov-report=xml:artifacts/coverage.xml --cov-report=json:artifacts/coverage.json --cov-report=html --junitxml=artifacts/results.xml

@@ -23,8 +23,11 @@ protocol and GUI tests; the enforced coverage baseline is Linux, including BlueZ
 contract tests and POSIX serial ports. CI configuration is not evidence that a
 remote platform run has passed.
 
-The Windows runner's desktop is enlarged for the 600×1024 portrait audit, so
-all tests use native Windows rendering. Linux audits use Xvfb, with a separate
+The layout harness restores its test window and supplies explicit maximum
+tracking dimensions so Windows permits a 600×1024 portrait capture even on a
+shorter runner display. It verifies the actual requested dimensions and uses
+native Windows rendering. This override applies only to test windows; normal
+application startup still fits the available desktop. Linux audits use Xvfb, with a separate
 Openbox check for window decorations and desktop work areas. Ubuntu 25.04 does
 not provide Qt Virtual Keyboard; its package check explicitly records this
 optional component as unavailable and still requires every transport/window check.

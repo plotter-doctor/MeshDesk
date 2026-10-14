@@ -13,7 +13,7 @@ from PyQt5.QtTest import QTest
 from meshdesk.controller import Controller
 from meshdesk.store import Store
 from meshdesk.mapview import MeshMap,QRProvider
-from conftest import wait_for
+from conftest import wait_for,prepare_layout_window
 
 INTERACTIVE=('QQuickLabel','QQuickSlider','QQuickMenuItem','QQuickButton','QQuickToolButton','QQuickComboBox','QQuickSwitch','QQuickCheckBox','QQuickTextField','QQuickTextArea','QQuickSpinBox','QQuickItemDelegate','QQuickTabButton')
 KINDS={}
@@ -87,6 +87,7 @@ def test_all_pages_and_settings_geometry(qtapp,tmp_path):
     reports=[];failures=[]
     try:
         root=engine.rootObjects()[0]
+        prepare_layout_window(root)
         wait_for(qtapp,lambda:json.loads(c.stateJson).get('connected'))
         def capture(name):
             root.setProperty('toastText','');QTest.qWait(80)
@@ -97,6 +98,7 @@ def test_all_pages_and_settings_geometry(qtapp,tmp_path):
             assert snapshot.save(str(output/(name+'.png')))
         for width,height in ((1024,600),(600,1024),(480,600)):
             root.setWidth(width);root.setHeight(height)
+            wait_for(qtapp,lambda:(root.width(),root.height())==(width,height))
             for language,theme in (('en','dark'),('pl-PL','light')):
                 c._dispatch('preference',{'key':'language','value':language});c._dispatch('preference',{'key':'theme','value':theme});c._publish()
                 for page in ('Chat','Nodes','Map','Settings','Connections','Activity','Preferences'):

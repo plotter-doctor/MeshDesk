@@ -8,7 +8,7 @@ from meshdesk.controller import Controller
 from meshdesk.mapview import MeshMap,QRProvider
 from meshdesk.store import Store
 from meshdesk.simulator import PEER
-from conftest import wait_for
+from conftest import wait_for,prepare_layout_window
 
 
 def test_native_ui_workflows(qtapp,tmp_path,monkeypatch):
@@ -24,6 +24,7 @@ def test_native_ui_workflows(qtapp,tmp_path,monkeypatch):
     try:
         assert engine.rootObjects(),messages
         root=engine.rootObjects()[0]
+        prepare_layout_window(root)
         wait_for(qtapp,lambda:json.loads(controller.stateJson).get('connected'))
         def act(action,**args):
             controller.dispatch(action,json.dumps(args))
@@ -139,6 +140,7 @@ def test_native_ui_workflows(qtapp,tmp_path,monkeypatch):
         act('preference',key='theme',value='dark')
         root.setProperty('width',600);root.setProperty('height',1024)
         root.setProperty('page','Chat');QTest.qWait(100)
+        assert (root.width(),root.height())==(600,1024)
         root.grabWindow().save(str(artifacts/'portrait.png'))
         # Reopening a populated direct conversation used to trigger a height
         # binding loop, especially when wrapped replies changed the layout.

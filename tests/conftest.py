@@ -23,6 +23,20 @@ def wait_for(app, condition, timeout=8):
     raise AssertionError('Timed out waiting for condition')
 
 
+def prepare_layout_window(window):
+    """Permit exact audit sizes even on the small Windows runner desktop.
+
+    Windows defaults an unconstrained window's maximum tracking size to its
+    monitor. An explicit limit makes Qt supply WM_GETMINMAXINFO for the taller
+    portrait capture. Normal application startup retains its work-area sizing.
+    """
+    from PyQt5.QtCore import QSize
+    from PyQt5.QtTest import QTest
+    window.setMaximumSize(QSize(2048, 2048))
+    window.showNormal()
+    QTest.qWait(100)
+
+
 @pytest.fixture
 def radio():
     from meshdesk.simulator import RadioSimulator
