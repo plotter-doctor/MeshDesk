@@ -23,6 +23,10 @@ def main():
     root = args.bundle.resolve() / '_internal'
     assert sys.platform == 'win32'
     # Import the shipped extension modules, with no separately installed PyQt.
+    # Match PyQt5 5.15.11's find_qt() and PyInstaller's Qt runtime hook:
+    # Qt's QSystemLibrary searches PATH, independently of AddDllDirectory.
+    os.environ['PATH'] = os.pathsep.join((str(root / 'PyQt5/Qt5/bin'),
+                                         str(root), os.environ.get('PATH', '')))
     handles = [os.add_dll_directory(str(root)),
                os.add_dll_directory(str(root / 'PyQt5/Qt5/bin'))]
     package = types.ModuleType('PyQt5')
