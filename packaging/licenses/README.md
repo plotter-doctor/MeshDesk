@@ -7,3 +7,4 @@ GPL v3 text used by PyQt5; attribution is in THIRD_PARTY.md.
 
 - pyserial 3.5: https://github.com/pyserial/pyserial/blob/v3.5/LICENSE.txt
 - PyWinRT 3.2.1 (Windows only): https://github.com/pywinrt/pywinrt/blob/v3.2.1/LICENSE
+- OpenSSL 3.x (Windows TLS libraries), Apache-2.0 text: https://github.com/openssl/openssl/blob/openssl-3.0.16/LICENSE.txt

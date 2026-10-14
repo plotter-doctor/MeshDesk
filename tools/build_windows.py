@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import platform
 import shutil
+import ssl
 import subprocess
 import sys
 
@@ -44,7 +45,7 @@ def main():
         raise RuntimeError('Python license not found: '+str(license_file))
     shutil.copyfile(license_file,folder/'PYTHON-LICENSE.txt')
     manifest = {'version':__version__, 'python':platform.python_version(), 'qt':qVersion(),
-                'openssl':backend.openssl_version_text(), 'platform':'windows-x86_64', 'license':'GPL-3.0-only',
+                'openssl':backend.openssl_version_text(), 'python_openssl':ssl.OPENSSL_VERSION, 'platform':'windows-x86_64', 'license':'GPL-3.0-only',
                 'distributions':[{'name':d.metadata['Name'],'version':d.version} for d in distributions]}
     (folder/'dependencies.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     archive = Path(shutil.make_archive(str(ROOT/'dist'/f'MeshDesk-{__version__}-windows-x86_64'),

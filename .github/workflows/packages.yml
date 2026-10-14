@@ -8,7 +8,7 @@ permissions:
   contents: read
 concurrency:
   group: packages-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: ${{ github.ref_type == 'branch' }}
 jobs:
   checks:
     uses: ./.github/workflows/test.yml
@@ -57,11 +57,14 @@ jobs:
     steps:
       - name: Configure archived releases and install tools
         run: |
-          . /etc/os-release
-          case "$VERSION_ID" in
-            25.*) find /etc/apt -type f \( -name sources.list -o -name '*.sources' \) -exec sed -i -E 's#https?://(archive.ubuntu.com/ubuntu/?|security.ubuntu.com/ubuntu/?)#http://old-releases.ubuntu.com/ubuntu/#g' {} + ;;
-          esac
-          apt-get update
+          if ! apt-get update -o APT::Update::Error-Mode=any; then
+            . /etc/os-release
+            case "$VERSION_ID" in
+              25.*) find /etc/apt -type f \( -name sources.list -o -name '*.sources' \) -exec sed -i -E 's#https?://(archive.ubuntu.com/ubuntu/?|security.ubuntu.com/ubuntu/?)#http://old-releases.ubuntu.com/ubuntu/#g' {} + ;;
+              *) exit 1 ;;
+            esac
+            apt-get update -o APT::Update::Error-Mode=any
+          fi
           apt-get install -y git ca-certificates xvfb xauth openbox x11-utils
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4

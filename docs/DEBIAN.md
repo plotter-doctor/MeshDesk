@@ -70,8 +70,8 @@ do not downgrade an incompatible database without restoring its backup.
 `vMAJOR.MINOR.PATCH` tags. It runs Linux and Windows tests, with separate 95%
 statement and branch coverage gates on Linux. It builds one `.deb` and tests its
 installation, three simulators, keyboard and decorated-window sizing in Ubuntu
-22.04, 24.04, 25.04 and 25.10 containers. Ubuntu 25.x uses archived repositories
-and no longer receives Ubuntu security support. Windows builds and runs the
+22.04, 24.04, 25.04 and 25.10 containers. Ubuntu 25.x can fall back to archived
+repositories after Ubuntu moves them and no longer receives Ubuntu security support. Windows builds and runs the
 portable executable independently.
 
 A matching version tag publishes the first-party and dependency source archives,
