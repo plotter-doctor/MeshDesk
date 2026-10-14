@@ -27,6 +27,10 @@ def main():
                os.add_dll_directory(str(root / 'PyQt5/Qt5/bin'))]
     package = types.ModuleType('PyQt5')
     package.__path__ = [str(root / 'PyQt5')]
+    # QtCore uses the package location when installing its embedded qt.conf.
+    # PyInstaller keeps this Python module inside its archive, so supply the
+    # location it would have in the extracted bundle.
+    package.__file__ = str(root / 'PyQt5/__init__.py')
     sys.modules['PyQt5'] = package
     from PyQt5 import QtCore, QtNetwork, QtGui
     assert Path(QtNetwork.__file__).is_relative_to(root)
