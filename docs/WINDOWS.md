@@ -18,7 +18,9 @@ simulators; they do not certify physical Windows Bluetooth or USB hardware.
 The POSIX virtual-serial simulator is available in the Linux package.
 
 The official Windows PyQt5 wheel uses Qt 5.15.2. Linux uses Qt maintained by the
-distribution. `dependencies.json` records exact bundled versions. Shared Qt DLLs
+distribution. The Qt wheel also supplies its own OpenSSL 1.1.1b libraries for
+Qt HTTPS; Python and cryptography use their separate OpenSSL 3 runtimes. This is
+a legacy Windows Qt runtime. `dependencies.json` records exact bundled versions. Shared Qt DLLs
 remain separate in `_internal` and can be replaced by compatible rebuilt copies.
 Dependency licenses are retained with their distribution metadata in `_internal`.
 The release supplies MeshDesk source, third-party source archives and Qt source.

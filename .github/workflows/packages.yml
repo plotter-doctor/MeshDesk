@@ -100,6 +100,8 @@ jobs:
           .build-venv/Scripts/python -m pip install -r requirements-windows.txt .
           .build-venv/Scripts/python tools/build_windows.py
           Copy-Item dist/windows/MeshDesk/dependencies.json dist/windows-dependencies.json
+      - name: Verify packaged HTTPS libraries and certificate validation
+        run: .build-venv/Scripts/python tools/probe_windows_tls.py dist/windows/MeshDesk
       - name: Test packaged executable
         run: python tools/smoke_windows.py dist/windows/MeshDesk/MeshDesk.exe
       - uses: actions/upload-artifact@v4
