@@ -23,6 +23,12 @@ protocol and GUI tests; the enforced coverage baseline is Linux, including BlueZ
 contract tests and POSIX serial ports. CI configuration is not evidence that a
 remote platform run has passed.
 
+The Windows runner's desktop is shorter than the 600×1024 portrait case.
+The two size-audit tests therefore use Qt's offscreen renderer on Windows;
+the remaining tests, populated-state GUI checks and frozen executable run on
+its native desktop. Linux audits use Xvfb, with a separate Openbox check for
+window decorations and desktop work areas.
+
 ## Simulators
 
 All simulators use the same protobuf radio state. Settings are read back through

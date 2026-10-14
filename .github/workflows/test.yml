@@ -34,7 +34,12 @@ jobs:
       - if: runner.os == 'Linux'
         run: python tools/check_coverage.py artifacts/coverage.json
       - if: runner.os != 'Linux'
-        run: python -m pytest -v -s --junitxml=artifacts/results.xml
+        run: python -m pytest -v -s --ignore=tests/test_gui.py --ignore=tests/test_gui_layout.py --junitxml=artifacts/results.xml
+      - name: Render portrait and landscape GUI audit independently of runner display size
+        if: runner.os == 'Windows'
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: python -m pytest -v -s tests/test_gui.py tests/test_gui_layout.py --junitxml=artifacts/geometry-results.xml
       - run: python -m pip wheel --no-deps . -w dist
       - uses: actions/upload-artifact@v4
         if: always()
