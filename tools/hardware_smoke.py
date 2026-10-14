@@ -276,7 +276,7 @@ def main():
                 act('chat', peer=recipient['num'], channel=0)
             root.setProperty('toastText', '')
             saved = {k: v for k, v in report.items() if k != 'routing_receipts'}
-            args.output.write_text(json.dumps(saved, indent=2) + '\n')
+            args.output.write_text(json.dumps(saved, indent=2) + '\n', encoding='utf-8')
             # The measurement is finished; do not keep accumulating packet or
             # QML diagnostic lists during normal interactive use.
             controller.delivered.disconnect(packet_event)
@@ -290,7 +290,7 @@ def main():
     finally:
         # Admin ACKs are intentionally omitted from the saved report.
         report.pop('routing_receipts', None)
-        args.output.write_text(json.dumps(report, indent=2) + '\n')
+        args.output.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
         for window in engine.rootObjects():
             window.close()
         del engine

@@ -159,12 +159,12 @@ def test_all_pages_and_settings_geometry(qtapp,tmp_path):
                 c.notification={'key_verification_'+suffix:data};c._publish()
                 capture(str(width)+'-verification-'+suffix)
         errors=[t for t in messages if any(s in t for s in ('Error','Binding loop','Cannot','Unable','is not defined'))]
-        (output/'inventory.json').write_text(json.dumps({'views':reports,'qml_errors':errors},indent=2))
+        (output/'inventory.json').write_text(json.dumps({'views':reports,'qml_errors':errors},indent=2), encoding='utf-8')
         from html import escape
         gallery='<!doctype html><meta charset="utf-8"><title>MeshDesk GUI review</title><style>body{font:16px sans-serif;background:#14212b;color:white}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px}img{width:100%}a{color:#8cdbbb}</style><h1>MeshDesk GUI review</h1><p>Rendered states and geometry findings. Open any image at full size. <a href="../variants/index.html">Populated chat, connection forms and advanced views</a>.</p><main>'
         for report in reports:
             name=report['view'];gallery+='<article><h2>'+escape(name)+'</h2><p>'+str(len(report['controls']))+' controls · '+str(len(report['issues']))+' geometry issues</p><a href="'+name+'.png"><img loading="lazy" src="'+name+'.png"></a></article>'
-        (output/'index.html').write_text(gallery+'</main>')
+        (output/'index.html').write_text(gallery+'</main>', encoding='utf-8')
         assert not errors,'\n'.join(set(errors))
         assert not failures,'\n'.join(failures)
     finally:

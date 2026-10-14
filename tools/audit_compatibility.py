@@ -39,7 +39,7 @@ def web_forms(source):
         group=aliases.get(component,component[0].lower()+component[1:])
         section='channel.0' if component=='Channel' else groups.get(group)
         paths={camel(f['path']):f['path'] for f in fields(new_message(section))} if section else {}
-        for name in re.findall(r'\bname:\s*"([^"]+)"',path.read_text()):
+        for name in re.findall(r'\bname:\s*"([^"]+)"',path.read_text(encoding='utf-8')):
             native=special.get((group,name),paths.get(re.sub(r'\.\d+$','',name)))
             out.append({'source':str(path.relative_to(source)),'web_field':name,'section':section,'native':native})
     if not out:raise ValueError('No form fields found in upstream source')
@@ -52,17 +52,17 @@ def main():
     parser.add_argument('--accept',action='store_true')
     args=parser.parse_args()
     current=schema();baseline=ROOT/'upstream/python-schema.json'
-    if args.accept:baseline.write_text(json.dumps(current,indent=2,sort_keys=True)+'\n')
-    elif not baseline.exists() or json.loads(baseline.read_text())!=current:
+    if args.accept:baseline.write_text(json.dumps(current,indent=2,sort_keys=True)+'\n', encoding='utf-8')
+    elif not baseline.exists() or json.loads(baseline.read_text(encoding='utf-8'))!=current:
         print('Python schema changed. Review the schema diff and adapter mappings.');return 1
-    forms=web_forms(args.web_source) if args.web_source else json.loads((ROOT/'upstream/web-form-fields.json').read_text())
+    forms=web_forms(args.web_source) if args.web_source else json.loads((ROOT/'upstream/web-form-fields.json').read_text(encoding='utf-8'))
     missing=[f for f in forms if not f['native']]
     for row in forms:
         if row['native'] and not row['native'].startswith('command:'):
             available={f['path'] for f in current.get(row['section'],[])}
             if row['native'] not in available:missing.append(row)
     if args.accept and args.web_source:
-        (ROOT/'upstream/web-form-fields.json').write_text(json.dumps(forms,indent=2)+'\n')
+        (ROOT/'upstream/web-form-fields.json').write_text(json.dumps(forms,indent=2)+'\n', encoding='utf-8')
     print(f'Official Python {importlib.metadata.version("meshtastic")}: {len(current)} settings sections')
     print(f'Web form fields: {len(forms)-len(missing)}/{len(forms)} mapped; hardware/workflow parity requires separate validation.')
     if missing:print(json.dumps(missing,indent=2))

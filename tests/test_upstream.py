@@ -8,7 +8,7 @@ ROOT=Path(__file__).parents[1]
 
 
 def test_pinned_library_and_schema():
-    pins=json.loads((ROOT/'src/meshdesk/resources/upstream.json').read_text())
+    pins=json.loads((ROOT/'src/meshdesk/resources/upstream.json').read_text(encoding='utf-8'))
     assert importlib.metadata.version('meshtastic')==pins['python']['tag']
     result=subprocess.run([sys.executable,str(ROOT/'tools/audit_compatibility.py')],capture_output=True,text=True)
     assert result.returncode==0,result.stdout+result.stderr

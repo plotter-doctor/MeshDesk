@@ -14,7 +14,6 @@ def main():
     env=dict(os.environ,PYTHONNOUSERSITE='1')
     subprocess.run([sys.executable,'-m','pip','wheel','--no-deps','--no-build-isolation','.', '-w','dist'],cwd=ROOT,env=env,check=True)
     subprocess.run([sys.executable,'-m','pip','wheel','--no-deps','--no-binary=dbus-fast','dbus-fast==5.0.26','-w','dist'],cwd=ROOT,env=dict(env,SKIP_CYTHON='1'),check=True)
-    from wheel.cli.tags import tags
     for path in (ROOT/'dist').glob('dbus_fast-5.0.26-*.whl'):
         if path.name.endswith('py3-none-any.whl'):continue
         with zipfile.ZipFile(path) as wheel:
@@ -22,7 +21,8 @@ def main():
                 raise RuntimeError('Refusing to mark compiled code as portable: '+str(path))
         # Upstream marks pure builds with the build-host tag; normalize only
         # after checking that the wheel contains no native extensions.
-        tags(str(path),python_tags='py3',abi_tags='none',platform_tags='any',remove=True)
+        subprocess.run([sys.executable, '-m', 'wheel', 'tags', '--python-tag', 'py3',
+                        '--abi-tag', 'none', '--platform-tag', 'any', '--remove', str(path)], check=True)
     package_kit()
 
 

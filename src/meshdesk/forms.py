@@ -10,7 +10,7 @@ from . import i18n
 
 @lru_cache(maxsize=1)
 def metadata():
-    return json.loads((Path(__file__).parent/'resources/web-forms.json').read_text())
+    return json.loads((Path(__file__).parent/'resources/web-forms.json').read_text(encoding='utf-8'))
 
 
 def value_at(message,path):

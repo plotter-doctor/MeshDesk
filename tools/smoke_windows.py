@@ -29,8 +29,8 @@ def main():
             assert result.returncode==0,(transport,result.returncode,result.stdout,result.stderr)
             assert ready.is_file(),transport+': did not become ready'
             assert screenshot.is_file() and screenshot.stat().st_size>10000,transport+': screenshot missing'
-            report['transports'][transport]=json.loads(ready.read_text())
-    (args.output/'report.json').write_text(json.dumps(report,indent=2)+'\n')
+            report['transports'][transport]=json.loads(ready.read_text(encoding='utf-8'))
+    (args.output/'report.json').write_text(json.dumps(report,indent=2)+'\n', encoding='utf-8')
     print(json.dumps(report,indent=2))
 
 

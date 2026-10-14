@@ -165,7 +165,7 @@ def main():
                     root.close()
                 del engine
                 controller.close()
-        (args.output/'geometry.json').write_text(json.dumps(reports,indent=2)+'\n')
+        (args.output/'geometry.json').write_text(json.dumps(reports,indent=2)+'\n', encoding='utf-8')
         print(json.dumps(reports))
     finally:
         qInstallMessageHandler(previous)

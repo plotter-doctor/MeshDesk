@@ -10,7 +10,7 @@ ROOT=Path(__file__).parent/'resources/locales'
 @lru_cache(maxsize=3)
 def catalog(language='en'):
     path=ROOT/(language+'.json')
-    return json.loads(path.read_text()) if path.is_file() else {}
+    return json.loads(path.read_text(encoding='utf-8')) if path.is_file() else {}
 
 
 def locales():
@@ -38,13 +38,13 @@ def translate(text,language):
 
 @lru_cache(maxsize=1)
 def native_labels():
-    return json.loads((ROOT.parent/'native-labels.json').read_text())
+    return json.loads((ROOT.parent/'native-labels.json').read_text(encoding='utf-8'))
 
 
 @lru_cache(maxsize=3)
 def native_catalog(language):
     path=ROOT.parent/'native-locales'/(language+'.json')
-    return json.loads(path.read_text()) if path.is_file() else {}
+    return json.loads(path.read_text(encoding='utf-8')) if path.is_file() else {}
 
 
 @lru_cache(maxsize=1)

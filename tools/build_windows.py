@@ -48,7 +48,7 @@ def main():
     archive = Path(shutil.make_archive(str(ROOT/'dist'/f'MeshDesk-{__version__}-windows-x86_64'),
                                       'zip',root_dir=output,base_dir='MeshDesk'))
     archive.with_suffix(archive.suffix+'.sha256').write_text(
-        hashlib.sha256(archive.read_bytes()).hexdigest()+'  '+archive.name+'\n')
+        hashlib.sha256(archive.read_bytes()).hexdigest()+'  '+archive.name+'\n', encoding='utf-8')
     print(archive)
 
 

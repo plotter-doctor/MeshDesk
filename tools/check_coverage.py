@@ -9,7 +9,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('report',type=Path)
     args=parser.parse_args()
-    totals=json.loads(args.report.read_text())['totals']
+    totals=json.loads(args.report.read_text(encoding='utf-8'))['totals']
     failed=False
     for label,covered,total in [('Statements',totals['covered_lines'],totals['num_statements']),
                                 ('Branches',totals['covered_branches'],totals['num_branches'])]:

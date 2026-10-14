@@ -795,7 +795,7 @@ class Controller(QObject):
         elif action=='import_settings_file':
             path,_=QFileDialog.getOpenFileName(None,'Import settings','','JSON files (*.json)')
             if path:
-                data=json.loads(Path(path).read_text())
+                data=json.loads(Path(path).read_text(encoding='utf-8'))
                 section=data['section']
                 self._stash_settings()
                 self.invalid_fields={};self.settings_error=''

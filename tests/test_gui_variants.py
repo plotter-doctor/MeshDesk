@@ -69,9 +69,9 @@ def test_populated_chat_transport_forms_and_advanced_settings(qtapp,tmp_path):
                             f.setProperty('contentY',f.property('contentHeight')-f.height())
                     capture(f'{width}-{language}-settings-tab-{tab}-bottom')
                 root.findChild(QObject,'settingsTabs').setProperty('currentIndex',0)
-        (output/'inventory.json').write_text(json.dumps(reports,indent=2))
+        (output/'inventory.json').write_text(json.dumps(reports,indent=2), encoding='utf-8')
         from html import escape
-        (output/'index.html').write_text('<!doctype html><meta charset="utf-8"><title>MeshDesk alternate states</title><style>body{background:#14212b;color:white;font:16px sans-serif}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px}img{width:100%}a{color:#8cdbbb}</style><h1>Alternate and populated states</h1><main>'+''.join('<article><h2>'+escape(r['view'])+'</h2><a href="'+r['view']+'.png"><img loading="lazy" src="'+r['view']+'.png"></a></article>' for r in reports)+'</main>')
+        (output/'index.html').write_text('<!doctype html><meta charset="utf-8"><title>MeshDesk alternate states</title><style>body{background:#14212b;color:white;font:16px sans-serif}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px}img{width:100%}a{color:#8cdbbb}</style><h1>Alternate and populated states</h1><main>'+''.join('<article><h2>'+escape(r['view'])+'</h2><a href="'+r['view']+'.png"><img loading="lazy" src="'+r['view']+'.png"></a></article>' for r in reports)+'</main>', encoding='utf-8')
         assert not problems,'\n'.join(problems)
         assert not [e for e in errors if any(w in e for w in ('Error','Binding loop','Cannot','Unable','is not defined'))],errors
     finally:

@@ -55,11 +55,11 @@ def main():
             result['key_event_ms']=times
             result['visible_messages']=len(json.loads(c.stateJson)['messages'])
             if sys.platform=='linux':
-                status=dict(line.split(':',1) for line in Path('/proc/self/status').read_text().splitlines())
+                status=dict(line.split(':',1) for line in Path('/proc/self/status').read_text(encoding='utf-8').splitlines())
                 result['rss_mib']=round(int(status['VmRSS'].split()[0])/1024,2)
             result['qml_errors']=[e for e in errors if any(t in e for t in ('Error','Cannot','Binding loop','is not defined','not installed'))]
             result['passed']=not result['qml_errors'] and result['visible_messages']==100
-            args.output.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
+            args.output.write_text(json.dumps(result,indent=2)+'\n', encoding='utf-8');print(json.dumps(result,indent=2))
             return 0 if result['passed'] else 1
         finally:
             for root in engine.rootObjects():root.close()

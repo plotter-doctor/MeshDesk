@@ -6,7 +6,7 @@ from pathlib import Path
 
 def latest_releases():
     result=[]
-    pins=json.loads((Path(__file__).parent/'resources/upstream.json').read_text())
+    pins=json.loads((Path(__file__).parent/'resources/upstream.json').read_text(encoding='utf-8'))
     for repo in ('web','python'):
         pinned=pins[repo]['tag']
         url='https://api.github.com/repos/meshtastic/'+repo+'/releases/latest'

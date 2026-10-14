@@ -194,7 +194,7 @@ def test_export_import_files_and_identity_print(c,qtapp,tmp_path,monkeypatch):
     with pytest.raises(ValueError):action(c,'export',kind='qr')
     load(c,qtapp,'config.security');action(c,'generate_identity')
     for kind in ('settings','identity','nodes','activity','messages'):
-        action(c,'export',kind=kind);assert json.loads(path.read_text()) is not None
+        action(c,'export',kind=kind);assert json.loads(path.read_text(encoding='utf-8')) is not None
         if __import__('os').name=='posix':assert path.stat().st_mode&0o777==0o600
     action(c,'export',kind='identity')
     monkeypatch.setattr(module.QFileDialog,'getOpenFileName',lambda *a:(str(path),''))

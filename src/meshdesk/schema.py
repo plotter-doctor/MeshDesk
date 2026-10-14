@@ -136,7 +136,7 @@ def set_field(message, path, value):
 
 @lru_cache(maxsize=1)
 def validation_rules():
-    return json.loads((Path(__file__).parent/'resources/web-validation.json').read_text())
+    return json.loads((Path(__file__).parent/'resources/web-validation.json').read_text(encoding='utf-8'))
 
 
 def validate_section(section, message):

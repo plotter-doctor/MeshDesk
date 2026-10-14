@@ -53,7 +53,7 @@ def main():
         ready=QTimer()
         def record_ready():
             if not args.demo or json.loads(controller.stateJson).get('connected'):
-                args.ready_file.write_text(json.dumps({'ready_seconds':time.monotonic()-started,'monotonic':time.monotonic()}))
+                args.ready_file.write_text(json.dumps({'ready_seconds':time.monotonic()-started,'monotonic':time.monotonic()}), encoding='utf-8')
                 ready.stop()
         ready.timeout.connect(record_ready);ready.start(100)
     if args.screenshot:

@@ -19,7 +19,7 @@ def verify_package():
     rules = []
     for config in [Path('/etc/dpkg/dpkg.cfg'), *sorted(Path('/etc/dpkg/dpkg.cfg.d').glob('*'))]:
         if config.is_file():
-            for line in config.read_text().splitlines():
+            for line in config.read_text(encoding='utf-8').splitlines():
                 if line.startswith(('path-exclude=', 'path-include=')):
                     key, pattern = line.split('=', 1)
                     rules.append((key, pattern))
@@ -153,20 +153,20 @@ print(json.dumps({'python':sys.version.split()[0],'qt':QtCore.QT_VERSION_STR,'li
                 '--data-dir', data, '--keyboard', 'off', '--ready-file', str(ready),
                 '--screenshot', str(screenshot), '--quit-after', '15'], env=env,
                 capture_output=True, text=True, timeout=60)
-            (output / (transport + '.log')).write_text(result.stdout + result.stderr)
+            (output / (transport + '.log')).write_text(result.stdout + result.stderr, encoding='utf-8')
             assert result.returncode == 0, result.stderr
             assert ready.exists(), f'{transport}: simulator did not connect before screenshot'
             assert screenshot.stat().st_size > 10000
             assert not any(word in result.stderr for word in ('Error:', 'Binding loop', 'Cannot load', 'is not defined')), result.stderr
-            report['transports'][transport] = json.loads(ready.read_text())
+            report['transports'][transport] = json.loads(ready.read_text(encoding='utf-8'))
     keyboard_env = dict(env, QT_IM_MODULE='qtvirtualkeyboard', QT_VIRTUALKEYBOARD_DESKTOP_DISABLE='1')
     result = subprocess.run(['/usr/bin/python3', '-I', str(Path(__file__).resolve()), '--keyboard-probe',
         '--output', str(output)], env=keyboard_env, capture_output=True, text=True, timeout=60)
-    (output / 'keyboard.log').write_text(result.stdout + result.stderr)
+    (output / 'keyboard.log').write_text(result.stdout + result.stderr, encoding='utf-8')
     assert result.returncode == 0, result.stdout + result.stderr
     report['keyboard'] = True
     report['documentation_omitted_by_dpkg'] = verify_package()
-    (output / 'report.json').write_text(json.dumps(report, indent=2) + '\n')
+    (output / 'report.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report, indent=2))
 
 

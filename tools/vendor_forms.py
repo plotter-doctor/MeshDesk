@@ -37,7 +37,7 @@ def balanced(text,start,opening='{',closing='}'):
 def extract(source):
     inventory=web_forms(source);result={}
     for filename in sorted({r['source'] for r in inventory}):
-        text=(source/filename).read_text()
+        text=(source/filename).read_text(encoding='utf-8')
         rows={r['web_field']:r for r in inventory if r['source']==filename}
         namespace=re.search(r'useTranslation\(\[?"([^"]+)"',text)[1]
         section=next(iter(rows.values()))['section']
@@ -89,7 +89,7 @@ def validation(source):
         name={'statusMessage':'statusmessage'}.get(file.stem,file.stem)
         if '.test.' in file.name or name not in groups:continue
         section=groups[name];native=fields(new_message(section))
-        text=file.read_text()
+        text=file.read_text(encoding='utf-8')
         rules={}
         for match in re.finditer(r'(\w+):\s*z\.(?:coerce\.)?(number|string)\(\)(.*?)(?=,\s*\n|\n\s*\})',text,re.S):
             name,kind,chain=match.groups()
@@ -111,12 +111,12 @@ def main():
     parser.add_argument('--write',action='store_true')
     args=parser.parse_args();result=extract(args.source)
     target=ROOT/'src/meshdesk/resources/web-forms.json'
-    if args.write:target.write_text(json.dumps(result,indent=2)+'\n')
-    elif not target.exists() or json.loads(target.read_text())!=result:
+    if args.write:target.write_text(json.dumps(result,indent=2)+'\n', encoding='utf-8')
+    elif not target.exists() or json.loads(target.read_text(encoding='utf-8'))!=result:
         raise SystemExit('Official form presentation changed; review and regenerate metadata')
     limits=validation(args.source);limit_target=ROOT/'src/meshdesk/resources/web-validation.json'
-    if args.write:limit_target.write_text(json.dumps(limits,indent=2)+'\n')
-    elif not limit_target.exists() or json.loads(limit_target.read_text())!=limits:
+    if args.write:limit_target.write_text(json.dumps(limits,indent=2)+'\n', encoding='utf-8')
+    elif not limit_target.exists() or json.loads(limit_target.read_text(encoding='utf-8'))!=limits:
         raise SystemExit('Official validation changed; review and regenerate metadata')
     print(f'{sum(map(len,result.values()))} fields with official grouping, labels and enablement rules')
 

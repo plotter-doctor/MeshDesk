@@ -41,7 +41,7 @@ def main():
     current=inventory(source)
     if not current:parser.error('No web source files found')
     baseline=ROOT/'upstream/web-inventory.json'
-    previous=json.loads(baseline.read_text()) if baseline.exists() else {}
+    previous=json.loads(baseline.read_text(encoding='utf-8')) if baseline.exists() else {}
     changes={'added':sorted(current.keys()-previous.keys()),'removed':sorted(previous.keys()-current.keys()),
              'changed':sorted(p for p in current.keys() & previous.keys() if current[p]!=previous[p])}
     print(json.dumps(changes,indent=2))
@@ -52,10 +52,10 @@ def main():
         if not folder.is_dir():continue
         catalog={}
         for path in folder.glob('*.json'):
-            catalog.update(flatten(json.loads(path.read_text()),path.stem+'.'))
-        (target/(folder.name+'.json')).write_text(json.dumps(catalog,ensure_ascii=False,sort_keys=True,indent=2)+'\n')
+            catalog.update(flatten(json.loads(path.read_text(encoding='utf-8')),path.stem+'.'))
+        (target/(folder.name+'.json')).write_text(json.dumps(catalog,ensure_ascii=False,sort_keys=True,indent=2)+'\n', encoding='utf-8')
     baseline.parent.mkdir(exist_ok=True)
-    baseline.write_text(json.dumps(current,sort_keys=True,indent=2)+'\n')
+    baseline.write_text(json.dumps(current,sort_keys=True,indent=2)+'\n', encoding='utf-8')
     print('Imported translations and recorded',len(current),'source files. Review the diff before accepting the upgrade.')
     return 0
 

@@ -14,7 +14,7 @@ def test_demo_executable(transport,tmp_path):
         '--screenshot',str(tmp_path/'window.png'),'--quit-after','8'],capture_output=True,text=True,timeout=45)
     assert result.returncode==0,result.stderr
     assert (tmp_path/'window.png').stat().st_size>10000
-    assert json.loads((tmp_path/'ready.json').read_text())['ready_seconds']>0
+    assert json.loads((tmp_path/'ready.json').read_text(encoding='utf-8'))['ready_seconds']>0
 
 
 def test_offline_startup(tmp_path):

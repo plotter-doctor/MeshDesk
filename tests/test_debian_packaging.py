@@ -27,10 +27,10 @@ def test_reject_nonportable_or_unsafe_wheels(tmp_path, name, data):
 def test_dependency_check_includes_python310_on_newer_build_hosts(tmp_path):
     metadata = tmp_path/'example-1.0.dist-info'
     metadata.mkdir()
-    (metadata/'METADATA').write_text('Name: example\nVersion: 1.0\nRequires-Dist: async-timeout>=5; python_version < "3.11"\n')
+    (metadata/'METADATA').write_text('Name: example\nVersion: 1.0\nRequires-Dist: async-timeout>=5; python_version < "3.11"\n', encoding='utf-8')
     with pytest.raises(ValueError, match='Python 3.10.*async-timeout'):
         builder.validate_dependencies(tmp_path)
     compatibility = tmp_path/'async_timeout-5.0.1.dist-info'
     compatibility.mkdir()
-    (compatibility/'METADATA').write_text('Name: async-timeout\nVersion: 5.0.1\n')
+    (compatibility/'METADATA').write_text('Name: async-timeout\nVersion: 5.0.1\n', encoding='utf-8')
     builder.validate_dependencies(tmp_path)

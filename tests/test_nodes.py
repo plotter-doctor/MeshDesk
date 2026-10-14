@@ -17,5 +17,5 @@ def test_filters_cover_unknowns_ranges_and_metadata():
 def test_ipv4_wire_byte_order():
     obj=new_message('config.network')
     set_field(obj,'ipv4_config.ip','192.0.2.10')
-    assert obj.ipv4_config.ip==int.from_bytes(bytes([192,168,8,112]),'little')
+    assert obj.ipv4_config.ip==int.from_bytes(bytes([192,0,2,10]),'little')
     assert next(f for f in fields(obj) if f['path']=='ipv4_config.ip')['value']=='192.0.2.10'

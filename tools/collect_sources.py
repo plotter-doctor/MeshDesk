@@ -29,7 +29,7 @@ def download(url, target, expected=None):
 def checksum(path):
     with path.open('rb') as source:
         digest = hashlib.file_digest(source, 'sha256').hexdigest()
-    path.with_name(path.name + '.sha256').write_text(digest + '  ' + path.name + '\n')
+    path.with_name(path.name + '.sha256').write_text(digest + '  ' + path.name + '\n', encoding='utf-8')
 
 
 def main():
@@ -37,7 +37,7 @@ def main():
     parser.add_argument('--debian', type=Path, required=True)
     parser.add_argument('--windows', type=Path, required=True)
     args = parser.parse_args()
-    windows = json.loads(args.windows.read_text())
+    windows = json.loads(args.windows.read_text(encoding='utf-8'))
     version = windows['version']
     if not re.fullmatch(r'\d+\.\d+\.\d+', version):
         raise ValueError('Invalid application version')
@@ -48,7 +48,7 @@ def main():
         shutil.rmtree(sources)
     sources.mkdir(parents=True)
     required = {(d['name'].lower().replace('_', '-'), d['version']) for d in windows['distributions']}
-    for entry in json.loads(args.debian.read_text()):
+    for entry in json.loads(args.debian.read_text(encoding='utf-8')):
         name, release, *_ = entry['wheel'].split('-')
         required.add((name.lower().replace('_', '-'), release))
     manifest = []
@@ -81,7 +81,7 @@ def main():
     for file in [args.debian, args.windows]:
         shutil.copyfile(file, sources / file.name)
     manifest_file = output / f'meshdesk-{version}-sources.json'
-    manifest_file.write_text(json.dumps(manifest, indent=2) + '\n')
+    manifest_file.write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     shutil.copyfile(manifest_file, sources / 'sources.json')
     archive = output / f'meshdesk-{version}-dependency-sources.tar.gz'
     with tarfile.open(archive, 'w:gz') as tar:

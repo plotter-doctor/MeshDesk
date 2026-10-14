@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def version():
-    tree = ast.parse((ROOT / 'src/meshdesk/__init__.py').read_text())
+    tree = ast.parse((ROOT / 'src/meshdesk/__init__.py').read_text(encoding='utf-8'))
     return next(ast.literal_eval(n.value) for n in tree.body if isinstance(n, ast.Assign)
                 and any(isinstance(t, ast.Name) and t.id == '__version__' for t in n.targets))
 
@@ -33,7 +33,7 @@ def version():
 def requirements():
     # Include Python 3.10-only dependencies even when building on Python 3.12.
     return [Requirement(line.split(';')[0].strip()) for line in
-            (ROOT / 'requirements-linux.lock').read_text().splitlines()
+            (ROOT / 'requirements-linux.lock').read_text(encoding='utf-8').splitlines()
             if line.strip() and not line.startswith('#')]
 
 
@@ -75,11 +75,11 @@ def prepare(wheelhouse):
             str(req), '-w', wheelhouse, env=dict(env, **variables))
         # dbus-fast labels even its pure build with host ABI/platform tags.
         # Normalize only after verifying every file contains no native code.
-        from wheel.cli.tags import tags
         for path in wheelhouse.glob('*.whl'):
             if canonicalize_name(parse_wheel_filename(path.name)[0]) == name:
                 list(pure_members(path))
-                tags(str(path), python_tags='py3', abi_tags='none', platform_tags='any', remove=True)
+                run(sys.executable, '-m', 'wheel', 'tags', '--python-tag', 'py3',
+                    '--abi-tag', 'none', '--platform-tag', 'any', '--remove', path)
     run(*pip, 'wheel', '--no-deps', '--no-build-isolation', '.', '-w', wheelhouse, env=env)
 
 
@@ -155,18 +155,18 @@ def build(wheelhouse, output, revision):
         target = stage / destination
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(ROOT / source, target)
-    (stage / 'usr/share/meshdesk/dependencies.json').write_text(json.dumps(manifest, indent=2) + '\n')
+    (stage / 'usr/share/meshdesk/dependencies.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     control = stage / 'DEBIAN'
     control.mkdir()
     size = sum(p.stat().st_size for p in stage.rglob('*') if p.is_file())
-    template = (ROOT / 'packaging/debian/control.in').read_text()
-    (control / 'control').write_text(template.replace('@VERSION@', deb_version).replace('@SIZE@', str((size + 1023) // 1024)))
+    template = (ROOT / 'packaging/debian/control.in').read_text(encoding='utf-8')
+    (control / 'control').write_text(template.replace('@VERSION@', deb_version).replace('@SIZE@', str((size + 1023) // 1024)), encoding='utf-8')
     sums = []
     for path in sorted((stage / 'usr').rglob('*')):
         if path.is_file():
             path.chmod(0o755 if path.parent == stage / 'usr/bin' else 0o644)
             sums.append(hashlib.md5(path.read_bytes()).hexdigest() + '  ' + str(path.relative_to(stage)))
-    (control / 'md5sums').write_text('\n'.join(sums) + '\n')
+    (control / 'md5sums').write_text('\n'.join(sums) + '\n', encoding='utf-8')
     # Match timestamps across rebuilds when CI supplies the commit timestamp.
     epoch = int(os.environ.get('SOURCE_DATE_EPOCH', '0'))
     for path in [*stage.rglob('*'), stage]:
@@ -177,7 +177,7 @@ def build(wheelhouse, output, revision):
     deb = output / f'meshdesk_{deb_version}_all.deb'
     run('dpkg-deb', '--root-owner-group', '-Zxz', '-z6', '--build', stage, deb,
         env=dict(os.environ, SOURCE_DATE_EPOCH=str(epoch)))
-    (output / (deb.name + '.sha256')).write_text(hashlib.sha256(deb.read_bytes()).hexdigest() + '  ' + deb.name + '\n')
+    (output / (deb.name + '.sha256')).write_text(hashlib.sha256(deb.read_bytes()).hexdigest() + '  ' + deb.name + '\n', encoding='utf-8')
     print(deb)
     return deb
 
